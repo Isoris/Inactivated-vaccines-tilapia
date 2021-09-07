@@ -25,10 +25,10 @@ This is a _sample_ book written in **Markdown**. You can use anything that Pando
 
 ## Timeline
 
-This is the project timeline 
+Link to the timeline: https://thesistimelinequentin.netlify.app/
 
 
-```{r fig.height=60}
+```{r echo=FALSE, fig.height=60}
 knitr::include_url("https://thesistimelinequentin.netlify.app/")
 ```
 

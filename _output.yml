@@ -8,7 +8,7 @@ bookdown::gitbook:
         <li><a href="./">Inactivated vaccines for tilapia</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/Isoris/Inactivated-vaccines-tilapia/%s
+    edit: https://github.com/Isoris/Inactivated-vaccines-tilapia/blob/main/%s
     sharing:
       github: yes
       facebook: no

@@ -8,12 +8,10 @@ bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  This online book will be updated regularly during the master research at the Asian Institute of Technology. I study the immune response of the fish tilapia (Oreochromis niloticus) to whole bacteria killed vaccines.
 link-citations: yes
 always_allow_html: yes
-github-repo: rstudio/bookdown-demo
+github-repo:  Isoris/Inactivated-vaccines-tilapia 
 ---
 ```{r, eval=FALSE}
 #install.packages("webshot")

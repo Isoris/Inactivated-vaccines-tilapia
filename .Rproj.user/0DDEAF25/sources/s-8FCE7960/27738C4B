@@ -3,7 +3,7 @@
     "path": "~/GitHub/Inactivated-vaccines-tilapia/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "3973714774",
     "contents": "",
     "dirty": false,
     "created": 1631043669349.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "27,21",
-        "scrollLine": "16"
+        "cursorPosition": "13,50",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1631054667,
+    "lastKnownWriteTime": 1631088089,
     "encoding": "ISO8859-1",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1631054667079,
+    "last_content_update": 1631088089139,
     "read_only": false,
     "read_only_alternatives": []
 }

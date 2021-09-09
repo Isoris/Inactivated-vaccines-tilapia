@@ -1,6 +1,9 @@
 h1:lab-assays-to-monitor-immune-response Lab assays to monitor immune response
 h2:elisa-for-igm-and-igt ELISA for IgM and IgT
 h2:pcr-of-key-immune-genes PCR of key immune genes
+h3:normalization-of-gene-expression-for-rt-pcr Normalization of gene expression for RT-PCR
 h2:agglutination-test Agglutination test
+h3:qualitative-detection-of-the-presence-of-antibodies-by-agglutination Qualitative detection of the presence of antibodies by agglutination
+h3:quantitative-antibody-agglutination-titration Quantitative antibody agglutination titration
 h2:collect-and-analyze-results Collect and analyze results
 

@@ -1,5 +1,5 @@
 --- 
-title: "Systemic and mucosal immune responses of Nile tilapia to monovalent and bivalent inactivated vaccines from Streptococcus agalactiae and Aeromonas veronii"   
+title: "Systemic and mucosal immune responses of fish Nile tilapia to monovalent and bivalent inactivated vaccines from Streptococcus agalactiae and Aeromonas veronii"   
 author: "By Quentin Andres ~ MSc. Aquaculture and Aquatic Resources Management, Asian Institute of Technology, Pathum Thani, Thailand"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site

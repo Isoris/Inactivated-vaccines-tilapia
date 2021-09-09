@@ -141,7 +141,7 @@ The vaccination will be different for the 4 experimental groups. Each group will
 
 #### High level view (for vaccination)
 
-The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 120 individuals are therefore be created. Half of the fish (n=60) for each group will receive the second dose. The fish that were not randomly selected to get the second dose of vaccine (booster) will be transferred to smaller aquaria prior to the first challenge test (week 4).  <br/>
+The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 120 individuals are therefore be created. Half of the fish (n=60) for each group will receive or not a second dose (8 subgroups). The two treatments (variables) are therefore the type of vaccine and the number of doses injected.<br/>
 <br/>
 ```{r, fig.cap="Experimental design for vaccination (high level)", echo=FALSE, out.width='\\textwidth'}
 knitr::include_graphics("vaccination-high.png")
@@ -149,6 +149,7 @@ knitr::include_graphics("vaccination-high.png")
 
 #### Low level view (for vaccination)
 
+The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 120 individuals are therefore be created (in blue). Half of the fish (n=60) for each group will receive the second dose (subgroups in yellow). The fish that were not randomly selected to get the second dose of vaccine (booster) will be transferred to smaller aquaria prior to the first challenge test (week 4).
 
 <br/>
 ```{r, fig.cap="Experimental design for vaccination (low level)", echo=FALSE , out.width='\\textwidth'}
@@ -157,6 +158,7 @@ knitr::include_graphics("vaccination-low.png")
 
 ### Sampling split-plot
 
+The sampling consists in the extraction of fish mucus and blood. The designs are shown below.
 ```{r eval=FALSE, include=FALSE}
 set.seed(2020) 
 spdes <- start_design("Experimental design for treatments (with control groups)") %>% 
@@ -175,7 +177,7 @@ plot(spdes, view = "low")
 
 There are 4 experimental groups (the treatments) corresponding to 4 clusters. Each single group will be sampled for mucus and blood weekly during 12 weeks. <br/>
 <br/>
-```{r, fig.cap="Experimental design for sampling (low level)", echo=FALSE , out.width='\\textwidth'}
+```{r, fig.cap="Experimental design for sampling (high level)", echo=FALSE , out.width='\\textwidth'}
 knitr::include_graphics("sampling-high.png")
 ```
 

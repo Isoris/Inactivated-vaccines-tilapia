@@ -9,8 +9,6 @@ fig:unnamed-chunk-13
 fig:unnamed-chunk-16
 fig:unnamed-chunk-17
 introduction
-background
-freshwater-cultured-fish-are-prone-to-microbial-pathogens
 research-context
 project-organisation
 timeline
@@ -18,11 +16,7 @@ conceptual-framework
 workflow
 experimental-design
 vaccination-split-plot
-high-level-view-for-vaccination
-low-level-view-for-vaccination
 sampling-split-plot
-high-level-view-for-sampling
-low-level-view-for-sampling
 split-of-the-work-in-workpackages
 pond-fish-and-husbandry
 aquaria

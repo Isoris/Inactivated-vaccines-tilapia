@@ -11,10 +11,10 @@ h2:conceptual-framework Conceptual framework
 h2:workflow Workflow
 h2:experimental-design Experimental design
 h3:vaccination-split-plot Vaccination split-plot
-h4:high-level-view-for-vaccination High level view (for vaccination)
-h4:low-level-view-for-vaccination Low level view (for vaccination)
+h4:high-level-view-vaccination High level view (vaccination)
+h4:low-level-view-vaccination Low level view (vaccination)
 h3:sampling-split-plot Sampling split-plot
-h4:high-level-view-for-sampling High level view (for sampling)
-h4:low-level-view-for-sampling Low level view (for sampling)
+h4:high-level-view-sampling High level view (sampling)
+h4:low-level-view-sampling Low level view (sampling)
 h2:split-of-the-work-in-workpackages Split of the work in workpackages
 

@@ -1,5 +1,5 @@
 --- 
-title: "Systemic and mucosal immune response of Nile tilapia to monovalent and bivalent vaccines against Streptococcus agalactiae and Aeromonas veronii"  
+title: "Systemic and mucosal immune response of Nile tilapia to monovalent and bivalent vaccines against Streptococcus agalactiae and Aeromonas veronii"   
 author: "By Quentin Andres ~ MSc. Aquaculture and Aquatic Resources Management, Asian Institute of Technology, Pathum Thani, Thailand"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -15,14 +15,24 @@ github-repo:  Isoris/Inactivated-vaccines-tilapia
 header-includes:
   - \usepackage{subfig}
   - \usepackage{float}
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{logo.png}\LARGE\\}
+  - \posttitle{\end{center}}
 ---
 ```{r, eval=FALSE}
 #install.packages("webshot")
 webshot::install_phantomjs()
 ```
-<!-- # Front matter -->
+# Front matter {-}
 
-*Link to the timeline: https://thesistimelinequentin.netlify.app/ *
+**Fighting infections** from the bacteria *Streptococcus agalactiae* and *Aeromonas veronii* **in Nile tilapia** (*Oreochromis niloticus*) is a **hot-topic** research for aquaculture. Both bacteria are cosmopolite and are causing high mortality in infected ponds. Moreover, a diseased fish, if consumed raw can easily become a vector for the transmission to animals and/or humans. Prophylactic measures such as fish **vaccination** are a specific and very **effective way of prevention** from diseases. In the present study, we aim to demonstrate that immunization is possible in Tilapia. By using **inactivated vaccines** prepared from formalin-killed pathogens, we were able to produce **two monovalent vaccines** from *Streptococcus agalactiae* and from *Aeromonas veronii*, **and a bivalent vaccine** from the combination of the two pathogens with a ratio of 1:1. **Four-hundred and eighty juveniles** were acclimated  and split into **4 groups** in separate aquariums for **vaccination**: 1 control (Ct) and 3 treatments (Sa, Av, Sa+Av) at (day 0). A second **booster** will be administrated **3 weeks later** (day 21) for **only half of the fish**. From the first day of vaccination, 8 individuals per group were selected for sampling weekly. Immune response, both systemic and mucosal was characterized for humoral immunity using concentrations in Immunoglobulins M as the immunogenic marker with the help of ELISA assays or agglutination antibody test and by RT-PCR for IgM gene transcription activity before, during and after immunization on a weekly basis. Finally, the **fish** subgroups **vaccinated once** only have undergone a **first bacterial challenge** at 4 weeks (day 28). The **other half** which received the **booster** was **challenged after 12 weeks** with a single lethal dose of *Streptococcus agalactiae* or *Aeromonas veronii*, respective of their vaccinations. Survival variability for each group is the consequence of the vaccines. 
+
+
+```{r, echo=FALSE, out.width='\\textwidth'}
+knitr::include_graphics("featured.png")
+```
+*Access the project timeline: https://thesistimelinequentin.netlify.app/ *
 
 # Introduction
 
@@ -107,7 +117,7 @@ knitr::include_url("https://thesistimelinequentin.netlify.app/")
 
 ## Conceptual framework
 
-```{r echo=FALSE, fig.height=60, fig.cap="Conceptual framework"}
+```{r echo=FALSE, out.width='\\textwidth', fig.cap="Conceptual framework"}
 knitr::include_graphics("conceptualframework-1.png")
 ```
 
@@ -115,7 +125,7 @@ In the initiation phase, the review of the existing literature on vaccination us
 
 ## Workflow 
 
-```{r echo=FALSE, fig.height=60, fig.cap="Work packages tasks flow chart"}
+```{r echo=FALSE, out.width='\\textwidth', fig.cap="Work packages tasks flow chart"}
 knitr::include_graphics("workflow.png")
 ```
 
@@ -192,7 +202,12 @@ knitr::include_graphics("sampling-low.png")
 
 ## Split of the work in workpackages
 
+The work packages have been defined in order to split the research work in a list of
+tasks.
 
+```{r, fig.cap="Work packages and tasks", echo=FALSE, out.width='\\textwidth'}
+knitr::include_graphics("workpackages.png")
+```
 
 
 ```{r include=FALSE}
@@ -200,6 +215,11 @@ knitr::include_graphics("sampling-low.png")
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
+```
+
+```{js, echo = FALSE}
+title=document.getElementById('header');
+title.innerHTML = '<img src="https://cdn.pixabay.com/photo/2017/04/11/15/55/animals-2222007_960_720.jpg" alt="Test Image">' + title.innerHTML
 ```
 
 <!-- ## About this book -->

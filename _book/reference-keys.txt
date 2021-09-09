@@ -6,8 +6,12 @@ fig:unnamed-chunk-9
 fig:unnamed-chunk-11
 fig:unnamed-chunk-12
 fig:unnamed-chunk-13
-fig:unnamed-chunk-16
 fig:unnamed-chunk-17
+fig:unnamed-chunk-18
+fig:unnamed-chunk-21
+fig:unnamed-chunk-22
+fig:unnamed-chunk-23
+fig:unnamed-chunk-24
 introduction
 research-context
 project-organisation
@@ -52,3 +56,11 @@ challenge-test
 bacterial-challenge1-no-booster
 bacterial-challenge-2-after-booster
 results
+systemic-antibody-response
+monovalent-vaccines
+bivalent-vaccines
+mucosal-antibody-response
+monovalent-vaccines-1
+bivalent-vaccines-1
+challenge-test-1-single-group
+challenge-test-2-booster-group

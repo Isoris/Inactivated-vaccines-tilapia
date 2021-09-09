@@ -111,15 +111,6 @@ body {
 text-align: justify}
 </style>
 
-## Timeline
-
-The timeline of the project with the different steps from the beginning to the end.
-
-```{r echo=FALSE, fig.width=8, fig.height=24}
-knitr::include_url("https://thesistimelinequentin.netlify.app/")
-```
-*Link to the timeline: https://thesistimelinequentin.netlify.app/ *
-
 ## Conceptual framework
 
 <br/>
@@ -130,13 +121,22 @@ knitr::include_graphics("conceptualframework-1.png")
 
 In the initiation phase, the review of the existing literature on vaccination using inactivated vaccines, antibody response and immunology of cichlids was performed. In the planning phase, the list of raw materials was assessed and the methology used was defined: ponds preparation, the fish feeding regime, protocols for bacterial culture, protocol for candidate vaccine development, protocols for fish mucus swabs and blood sampling, protocols for antibody agglutination titration, ELISA, RT-PCR and the protocol for challenge tests. During the execution phase, the fish immune responses after vaccination by each of three candidate vaccines was monitored and associated relevant data were collected. The challenge test in vivo has been performed twice after vaccination (once after first dose, once after booster dose). The results of all the experiments are presented in the final master thesis paper. Finally, during the project closing phase, I have drawn conclusions from the compared vaccines efficiencies. And I have given recommendations on best vaccination protocol to provide the best protection against the two bacterial strains S.agalactiae and A.veronii.
 
+## Split of the work in workpackages
+
+The work packages have been defined in order to split the research work in a list of
+tasks.
+
+```{r, fig.cap="Work packages and tasks", echo=FALSE, out.width='\\textwidth'}
+knitr::include_graphics("workpackages.png")
+```
+
 ## Workflow 
 
 ```{r echo=FALSE, out.width='\\textwidth', fig.cap="Work packages tasks flow chart"}
 knitr::include_graphics("workflow.png")
 ```
 
-## Experimental design
+## Experimental designs
 
 ```{r include=FALSE}
 library(edibble)
@@ -152,7 +152,7 @@ plot(spdes)
 plot(spdes, view = "low")
 ```
 
-### Vaccination split-plot
+### Vaccination 
 
 The vaccination will be different for the 4 experimental groups. Each group will consist of approximately 120 individuals. Therefore, the 4 groups will be kept separately in 4 medium aquaria. The first dose will be given to all individuals in each group with either (Control, Sa, Av, Sa+Av). The second dose of vaccination (booster) will be given 3 weeks later (21 days after the end of the acclimatation of the fish to their experimental aquarium).
 
@@ -173,7 +173,7 @@ The fish can be vaccinated with only one of the four vaccine type (Control, Sa, 
 knitr::include_graphics("vaccination-low.png")
 ```
 
-### Sampling split-plot
+### Sampling 
 
 The sampling consists in the extraction of fish mucus and blood. The designs are shown below.
 ```{r eval=FALSE, include=FALSE}
@@ -206,16 +206,14 @@ In total there will be 48 unique samplings (4 groups* 12 weeks). The samples wil
 knitr::include_graphics("sampling-low.png")
 ```
 
+## Timeline
 
-## Split of the work in workpackages
+The timeline of the project with the different steps from the beginning to the end.
 
-The work packages have been defined in order to split the research work in a list of
-tasks.
-
-```{r, fig.cap="Work packages and tasks", echo=FALSE, out.width='\\textwidth'}
-knitr::include_graphics("workpackages.png")
+```{r echo=FALSE, fig.width=8, fig.height=24}
+knitr::include_url("https://thesistimelinequentin.netlify.app/")
 ```
-
+*Link to the timeline: https://thesistimelinequentin.netlify.app/ *
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

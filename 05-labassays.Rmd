@@ -1,0 +1,17 @@
+# Lab assays to monitor immune response
+
+<style>
+body {
+text-align: justify}
+</style>
+
+## ELISA for IgM and IgT 
+
+## PCR of key immune genes
+
+## Agglutination test 
+
+## Collect and analyze results 
+
+
+

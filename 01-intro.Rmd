@@ -1,11 +1,24 @@
-# Hello bookdown 
+# Pond, fish and husbandry 
+
+<style>
+body {
+text-align: justify}
+</style>
 
 All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+T1.1 Clean the 4 aquaria.
+T1.4 Stock 100 juveniles fish of at least 12-13 grams per aquarium.
+T1.3 Record water parameter.
+T1.3 Assess population distribution parameters: calculate mean for mass, size and associated standard deviations (if the population is gaussian).
+T1.5 Acclimate 10 days.
+T1.1 Define feeding regime.
 
-## A section
+## Aquaria
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
 
-### An unnumbered section {-}
+## Number of fish and their caracteristics
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+## Feeding regime
+
+## Acclimatation
+

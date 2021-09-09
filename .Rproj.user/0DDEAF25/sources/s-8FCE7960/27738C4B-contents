@@ -1,5 +1,5 @@
 --- 
-title: "Immune response of tilapia to inactivated vaccines"
+title: "Systemic and mucosal immune response of Nile tilapia to monovalent and bivalent vaccines against Streptococcus agalactiae and Aeromonas veronii"
 author: "By Quentin Andres"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -8,7 +8,7 @@ bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This online book will be updated regularly during the master research at the Asian Institute of Technology. I study the immune response of the fish tilapia (Oreochromis niloticus) to whole bacteria killed vaccines.
+  This online book will be updated regularly during the master research at the Asian Institute of Technology. It aims to cover my progression in the study of Tilapia's immune response  to the whole bacteria killed vaccines.
 link-citations: yes
 always_allow_html: yes
 github-repo:  Isoris/Inactivated-vaccines-tilapia 
@@ -17,48 +17,125 @@ github-repo:  Isoris/Inactivated-vaccines-tilapia
 #install.packages("webshot")
 webshot::install_phantomjs()
 ```
+<!-- # Front matter -->
+
+<!-- Link to the timeline: https://thesistimelinequentin.netlify.app/ -->
+
+# Introduction
+
+<style>
+body {
+text-align: justify}
+</style>
+
+## Background
+
+In order to sustain an intensified and resilient Cichlids’ aquaculture, many research units and private companies around the world are studying immune responses of fish against viral and bacterial infections and are developing vaccines. There is currently no existing formulation of vaccine that can protect the fish against S.agalactiae and A.veronii, two major fish pathogens, at once. Prophylaxis treatments for cultured fish must be cheap and convenient to use, as well as efficient and durable. Oil-based formalin-killed vaccines score all criteria. They are convenient for small and medium scale aquaculture production systems.
+
+
+### Freshwater aquaculture is suceptible to microbial pathogens
+
+Two pathogens, S.agalactiae and A.veronii are the etiological agent of bacterial infections in freshwater cultured fish. They can be found all over the globe, with reported outbreaks in Japan, Taiwan, and the United States. They induce mass mortality of the infected fish within a few days. The two bacterial isolates used in this research are coming from Thailand and were gifted by Dr.Ha Thanh Dong. Those isolates are highly pathogenic and their presence may create substantial economic loss for the farmers.In Thailand, freshwater fish culture is of first importance for the economy and for the food safety. Nile tilapia (Oreochromis niloticus) is the most produced fish and represent almost 50% of the total freshwater fish production for Thailand. However it is also the most touched by infections from S.agalactiae and A.veronii. The proportions of fish species cultured are in the figure below:
+
+```{r echo=FALSE, fig.cap="Proportion of freshwater fish species farmed in Thailand. Adapted from: Dr Nopadon Pirarat", message=FALSE, warning=FALSE}
+#install.packages("lessR")
+# library(ggplot2)
+# library(tidyverse)
+# library(scales)
+# library(ggrepel)
+# library(lessR)
+# data <- read.csv(file = "freshwater_aquaculture_thailand.csv", header = T)
+# data <- data %>% arrange(Percentage) %>% mutate(Percentage = Percentage/100) %>% 
+#   mutate(pourcent = percent(Percentage))
+# attach(data)
+# palette <- c( "#F8A51C","#CFCDCD","#FFF2CC","#E2EFD8", "#DDEBF6", "#8EAADB","#7282AA","#5EBAC0")
+# pc(data = data, x = Freshwater.fish, y = Percentage, color= "black", lwd = 1.5, values_color= "black", values_size = 1.2,
+#    fill = palette, legend_size = 4, text_size = 1.5,label_max=10)
+knitr::include_graphics("piechart-1.png")
+```
+
+
+My master research at the Asian Institute of Technology aims to study Nile tilapia's immune response to the whole bacteria killed vaccines and prove that 1) vaccines are efficient 2) can immunize against the two bacteria in a single dose.
+
+# Research context
+
+The following questions will be answered in their corresponding sections.<br/>
+<br/>
+*Research questions:*   
+
+  - Is the vaccine effective? <br/>
+  - How much protection does the vaccines offer to the fish? <br/>
+  - Are single formulations (monovalent) as effective as a combination (bivalent)?<br/>
+  - Is a booster dose any necessary/useful?<br/>
+
+*Details about the experiment:*
+
+ - What species/strain of fish?<br/>
+ - How old are the individuals?<br/>
+ - How much beneficial can be the vaccination for aquaculture?<br/>
+ - What are the characteristics of the pathogens used in the vaccine?<br/>
+ - Where does the experiment takes place?<br/>
+ - What are the factors and variables to consider?<br/>
+ - What tests will be performed and why?<br/>
+ - Who is in charge of carrying the experiments?<br/>
+ - When? <br/>
+ - What are the majors risks and challenges?<br/>
+ - Is the experiment reproducible?, what are the limitations? <br/>
+ 
 # Project organisation
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+Objectives: Study of the immune response to formalin killed vaccines and their efficiencies. 
+
+## Conceptual framework
+
+```{r echo=FALSE, fig.height=60}
+knitr::include_graphics("conceptualframework-1.png")
+```
+
+## Workflow 
+```{r echo=FALSE, fig.height=60}
+knitr::include_graphics("workflow3-1.png")
+```
 
 ## Timeline
-
-Link to the timeline: https://thesistimelinequentin.netlify.app/
-
 
 ```{r echo=FALSE, fig.height=60}
 knitr::include_url("https://thesistimelinequentin.netlify.app/")
 ```
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
-
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
-
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
 ## Experimental design
 
-You can render the HTML version of this example book without changing anything:
-
-1. Find the **Build** pane in the RStudio IDE, and
-
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
-
-Or build the book from the R console:
-
-```{r, eval=FALSE}
-bookdown::render_book()
+```{r, echo=F }
+library(edibble)
+set.seed(2020) 
+set.seed(2020) 
+spdes <- start_design("Split-plot Design") %>% 
+  set_units(Medium_aquarium = 3,
+            Small_aquarium = nested_in(Medium_aquarium, 2)) %>% 
+  set_trts(Vaccine_type = c("Sa","Av","Sa+Av"),
+           Vaccine_dose    = c("Unique", "Booster")) %>% 
+  allocate_trts(Vaccine_type ~ Medium_aquarium, 
+                Vaccine_dose  ~ Small_aquarium) %>% 
+  randomise_trts()
+spdes
 ```
 
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
-
-## Work packages
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
+```{r, fig.align="center", fig.cap=c("your caption"), echo=FALSE}
+knitr::include_graphics("Split-Plot-Design-High-1.png")
 ```
+
+
+```{r, fig.cap=c("your caption"), echo=FALSE}
+knitr::include_graphics("Split-Plot-Design-Low-1.png")
+```
+
+
+
+
+## Split of the work in workpackages
+
+
 
 
 ```{r include=FALSE}
@@ -67,3 +144,14 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+<!-- ## About this book -->
+<!-- This is a book written in **Markdown**. The methodology used and packages will be described in the following sub-sections:  -->
+
+<!-- You can render the HTML version of this example book without changing anything: -->
+
+<!-- 1. Find the **Build** pane in the RStudio IDE, and -->
+
+<!-- 1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files. -->
+
+<!-- Or build the book from the R console: -->

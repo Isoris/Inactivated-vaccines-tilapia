@@ -1,0 +1,5 @@
+"0","# Bacterial challenges"
+"0","Challenge1 <- readxl::read_xlsx(path = ""Bacterial challenge.xlsx"", sheet = ""Challenge 1"")"
+"0","Challenge1$Group <- as.factor(Challenge1$Group)"
+"0","Challenge1$Challenge <- as.factor(Challenge1$Challenge)"
+"0","Challenge1$Aquarium_number <- as.factor(Challenge1$Aquarium_number)"

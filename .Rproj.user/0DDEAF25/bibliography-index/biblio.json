@@ -167,6 +167,27 @@
             "type": "book"
         },
         {
+            "URL": "https://rpkgs.datanovia.com/ggpubr/",
+            "author": [
+                {
+                    "family": "Kassambara",
+                    "given": "Alboukadel"
+                }
+            ],
+            "id": "R-ggpubr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 0.4.0",
+            "title": "Ggpubr: ggplot2 based publication ready plots",
+            "title-short": "Ggpubr",
+            "type": "book"
+        },
+        {
             "URL": "https://yihui.org/knitr/",
             "author": [
                 {
@@ -267,6 +288,56 @@
             "note": "R package version 2.10",
             "title": "Rmarkdown: Dynamic documents for r",
             "title-short": "Rmarkdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://github.com/therneau/survival",
+            "author": [
+                {
+                    "family": "Therneau",
+                    "given": "Terry M"
+                }
+            ],
+            "id": "R-survival",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 3.2-13",
+            "title": "Survival: Survival analysis",
+            "title-short": "Survival",
+            "type": "book"
+        },
+        {
+            "URL": "https://rpkgs.datanovia.com/survminer/index.html",
+            "author": [
+                {
+                    "family": "Kassambara",
+                    "given": "Alboukadel"
+                },
+                {
+                    "family": "Kosinski",
+                    "given": "Marcin"
+                },
+                {
+                    "family": "Biecek",
+                    "given": "Przemyslaw"
+                }
+            ],
+            "id": "R-survminer",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 0.4.9",
+            "title": "Survminer: Drawing survival curves using ggplot2",
+            "title-short": "Survminer",
             "type": "book"
         },
         {
@@ -475,6 +546,30 @@
             "publisher": "Chapman; Hall/CRC",
             "publisher-place": "Boca Raton, Florida",
             "title": "R markdown cookbook",
+            "type": "book"
+        },
+        {
+            "ISBN": "0-387-98784-3",
+            "author": [
+                {
+                    "literal": "Terry M. Therneau"
+                },
+                {
+                    "literal": "Patricia M. Grambsch"
+                }
+            ],
+            "id": "survival-book",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "publisher": "Springer",
+            "publisher-place": "New York",
+            "title": "Modeling survival data: Extending the Cox model",
+            "title-short": "Modeling survival data",
             "type": "book"
         }
     ],

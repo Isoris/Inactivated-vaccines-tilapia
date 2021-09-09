@@ -232,3 +232,126 @@ title.innerHTML = '<img src="https://cdn.pixabay.com/photo/2017/04/11/15/55/anim
 <!-- 1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files. -->
 
 <!-- Or build the book from the R console: -->
+
+<!--chapter:end:index.Rmd-->
+
+# Pond, fish and husbandry 
+
+<style>
+body {
+text-align: justify}
+</style>
+
+## Aquaria
+
+### Size and Shape 
+
+### Water parameters
+
+## Number of fish and their caracteristics
+
+## Feeding regime
+
+## Acclimatation
+
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Bacterial isolation from the fish tissues 
+
+<style>
+body {
+text-align: justify}
+</style>
+
+Organs in 5 randomly sampled juveniles using TSA/TSB or BHIA
+
+
+<!--chapter:end:02-bacterialisolation.Rmd-->
+
+
+# Preparation of bacterial culture and formalin-killed vaccines {#cross}
+
+Placeholder
+
+
+## Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h
+## Bacterial culture
+### Growth-curves
+### Count viable and dead cells
+### Estimate biomass with spectrophotometer for ??=600 nm
+## Production of inactivated vaccines
+### Production of vaccine Sa 
+### Production of vaccine Av  
+### Production of vaccine Sa + Av 
+### Production of vaccine Control 
+
+<!--chapter:end:03-bacterialculture.Rmd-->
+
+# Sample collection and Immunization
+
+<style>
+body {
+text-align: justify}
+</style>
+
+## Sample collection
+
+## Immunization
+
+
+<!--chapter:end:04-samplingimmunization.Rmd-->
+
+
+# Lab assays to monitor immune response
+
+Placeholder
+
+
+## ELISA for IgM and IgT 
+## PCR of key immune genes
+### Normalization of gene expression for RT-PCR
+## Agglutination test 
+### Qualitative detection of the presence of antibodies by agglutination 
+### Quantitative antibody agglutination titration
+## Collect and analyze results 
+
+<!--chapter:end:05-labassays.Rmd-->
+
+# Challenge test
+
+<style>
+body {
+text-align: justify}
+</style>
+
+## Bacterial challenge1 (no booster)
+
+
+
+## Bacterial challenge 2 (after booster)
+
+
+
+
+
+<!--chapter:end:06-share.Rmd-->
+
+# Results
+
+<style>
+body {
+text-align: justify}
+</style>
+
+
+
+
+<!--chapter:end:07-results.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:08-references.Rmd-->
+

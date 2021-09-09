@@ -188,6 +188,27 @@
             "type": "book"
         },
         {
+            "URL": "https://CRAN.R-project.org/package=ggsci",
+            "author": [
+                {
+                    "family": "Xiao",
+                    "given": "Nan"
+                }
+            ],
+            "id": "R-ggsci",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "note": "R package version 2.9",
+            "title": "Ggsci: Scientific journal and sci-fi themed color palettes for ggplot2",
+            "title-short": "Ggsci",
+            "type": "book"
+        },
+        {
             "URL": "https://yihui.org/knitr/",
             "author": [
                 {

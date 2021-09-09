@@ -12,7 +12,10 @@ fig:unnamed-chunk-21
 fig:unnamed-chunk-22
 fig:unnamed-chunk-23
 fig:unnamed-chunk-24
+fig:unnamed-chunk-26
+fig:unnamed-chunk-28
 fig:unnamed-chunk-30
+fig:unnamed-chunk-31
 introduction
 research-context
 project-organisation
@@ -65,8 +68,8 @@ monovalent-vaccines-1
 bivalent-vaccines-1
 challenge-test-1-single-group
 relative-percentage-survival-single-dose
+kaplan-meier-survival-estimates-for-the-first-challenge-test
 challenge-test-2-booster-group
 relative-percentage-survival-booster
-kaplan-meier-survival-estimates-for-challenge-test-1
-kaplan-meier-survival-estimates-for-challenge-test-2
+kaplan-meier-survival-estimates-for-the-second-challenge-test
 discussion

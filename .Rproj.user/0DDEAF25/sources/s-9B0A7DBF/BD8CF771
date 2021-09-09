@@ -3,7 +3,7 @@
     "path": "~/GitHub/Inactivated-vaccines-tilapia/03-bacterialculture.Rmd",
     "project_path": "03-bacterialculture.Rmd",
     "type": "r_markdown",
-    "hash": "1563808194",
+    "hash": "1903755333",
     "contents": "",
     "dirty": false,
     "created": 1631140940497.0,
@@ -12,15 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "6,0",
-        "scrollLine": "0"
+        "cursorPosition": "13,0",
+        "scrollLine": "0",
+        "ignored_words": "tilapia\n"
     },
     "folds": "",
-    "lastKnownWriteTime": 1631151077,
+    "lastKnownWriteTime": 1631203932,
     "encoding": "ISO8859-1",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1631151077616,
+    "last_content_update": 1631203932220,
     "read_only": false,
     "read_only_alternatives": []
 }

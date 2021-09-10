@@ -1,5 +1,17 @@
 "0","# Systemic antibody response"
-"0",""
+"0","library(survival)"
+"2","Warning:"
+"2"," package ‘survival’ was built under R version 4.1.1
+"
+"2","
+Attaching package: ‘survival’
+
+"
+"2","The following object is masked from ‘package:edibble’:
+
+    cluster
+
+"
 "0","Systemic_mono <- readxl::read_xlsx(path = ""Systemic antibody response to vaccines.xlsx"", "
 "0","                                   sheet = ""Monovalent"") "
 "0","Mucosal_mono <- readxl::read_xlsx(path = ""Mucosal antibody response to vaccines.xlsx"","

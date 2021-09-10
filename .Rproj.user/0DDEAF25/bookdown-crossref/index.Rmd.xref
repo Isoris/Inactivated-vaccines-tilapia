@@ -11,10 +11,8 @@ h2:split-of-the-work-in-workpackages Split of the work in workpackages
 h2:workflow Workflow
 h2:experimental-designs Experimental designs
 h3:vaccination Vaccination
-h4:high-level-view-vaccination High level view (vaccination)
-h4:low-level-view-vaccination Low level view (vaccination)
 h3:sampling Sampling
-h4:high-level-view-sampling High level view (sampling)
-h4:low-level-view-sampling Low level view (sampling)
-h2:timeline Timeline
+h2:timelines Timelines
+h4:horizontal Horizontal
+h4:vertical Vertical
 

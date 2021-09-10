@@ -3,8 +3,6 @@ fig:unnamed-chunk-4
 fig:unnamed-chunk-5
 fig:unnamed-chunk-6
 fig:unnamed-chunk-8
-fig:unnamed-chunk-9
-fig:unnamed-chunk-11
 fig:unnamed-chunk-12
 fig:unnamed-chunk-17
 fig:unnamed-chunk-18
@@ -23,9 +21,7 @@ conceptual-framework
 split-of-the-work-in-workpackages
 workflow
 experimental-designs
-vaccination
-sampling
-timeline
+timelines
 pond-fish-and-husbandry
 aquaria
 size-and-shape

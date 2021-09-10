@@ -116,7 +116,7 @@ text-align: justify}
 <br/>
 
 ```{r echo=FALSE, out.width='\\textwidth', fig.cap="Conceptual framework"}
-knitr::include_graphics("conceptualframework-1.png")
+knitr::include_graphics("conceptual framework.png")
 ```
 
 In the initiation phase, the review of the existing literature on vaccination using inactivated vaccines, antibody response and immunology of cichlids was performed. In the planning phase, the list of raw materials was assessed and the methology used was defined: ponds preparation, the fish feeding regime, protocols for bacterial culture, protocol for candidate vaccine development, protocols for fish mucus swabs and blood sampling, protocols for antibody agglutination titration, ELISA, RT-PCR and the protocol for challenge tests. During the execution phase, the fish immune responses after vaccination by each of three candidate vaccines was monitored and associated relevant data were collected. The challenge test in vivo has been performed twice after vaccination (once after first dose, once after booster dose). The results of all the experiments are presented in the final master thesis paper. Finally, during the project closing phase, I have drawn conclusions from the compared vaccines efficiencies. And I have given recommendations on best vaccination protocol to provide the best protection against the two bacterial strains S.agalactiae and A.veronii.
@@ -127,16 +127,18 @@ The work packages have been defined in order to split the research work in a lis
 tasks.
 
 ```{r, fig.cap="Work packages and tasks", echo=FALSE, out.width='\\textwidth'}
-knitr::include_graphics("workpackages.png")
+knitr::include_graphics("WorkpackagesHD.png")
 ```
 
 ## Workflow 
 
 ```{r echo=FALSE, out.width='\\textwidth', fig.cap="Work packages tasks flow chart"}
-knitr::include_graphics("workflow.png")
+knitr::include_graphics("WorkflowHD1.png")
 ```
 
 ## Experimental designs
+
+<br/>
 
 ```{r include=FALSE}
 library(edibble)
@@ -152,61 +154,89 @@ plot(spdes)
 plot(spdes, view = "low")
 ```
 
-### Vaccination 
+### Vaccination {-}
 
-The vaccination will be different for the 4 experimental groups. Each group will consist of approximately 120 individuals. Therefore, the 4 groups will be kept separately in 4 medium aquaria. The first dose will be given to all individuals in each group with either (Control, Sa, Av, Sa+Av). The second dose of vaccination (booster) will be given 3 weeks later (21 days after the end of the acclimatation of the fish to their experimental aquarium).
+The vaccination will be different for each of 4 experimental groups. Each group will include approximately 165 individuals kept in 4 medium aquaria/ponds. The first dose of vaccine will be given to all individuals in each group (Control, Sa, Av, Sa+Av). The second dose of vaccination (booster) will be given 3 weeks later (21 days after the end of the acclimatation of the fish to their experimental aquarium), again to each 4 groups.
 
-#### High level view (vaccination) {-}
+### Sampling {-}
 
-The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 120 individuals are therefore be created. Half of the fish (n=60) for each group will receive or not a second dose (8 subgroups). The two treatments (variables) are therefore the type of vaccine and the number of doses injected.<br/>
-<br/>
-```{r, fig.cap="Experimental design for fish vaccination (high level)", echo=FALSE, out.width='\\textwidth'}
-knitr::include_graphics("vaccination-high.png")
+The sampling is done weekly for 12 weeks. It consists in the analysis of gene expressions levels by RT-PCR. To do so 3 animals of each group are scarified every week in order to obtain head kidney tissue and liver tissue. Moreover, 8 different animals are sampled blood and mucus but not killed. 
+
+<!-- The experimental designs for the sampling are shown below are shown below. -->
+
+
+```{r echo=FALSE, out.width='\\textwidth', fig.cap="Experimental design for fish vaccinations and bacterial challenges showing the 4 different groups representing the treatments, and the 8 different virtual subgroups. The subgroup is the unit that will be consumed after one challenge test."}
+knitr::include_graphics("ExperimentaldesignHD.png")
 ```
 
-#### Low level view (vaccination) {-}
+<!-- #### High level view (vaccination) {-} -->
 
-The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 120 individuals are therefore be created (in blue). Half of the fish (n=60) for each group will receive the second dose (subgroups in yellow). The fish that were not randomly selected to get the second dose of vaccine (booster) will be transferred to smaller aquaria prior to the first challenge test (week 4).
+<!-- The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 120 individuals are therefore be created. Half of the fish (n=60) for each group will receive or not a second dose (8 subgroups). The two treatments (variables) are therefore the type of vaccine and the number of doses injected.<br/> -->
+<!-- <br/> -->
+<!-- ```{r, fig.cap="Experimental design for fish vaccination (high level)", echo=FALSE, out.width='\\textwidth'} -->
+<!-- knitr::include_graphics("vaccination-high.png") -->
+<!-- ``` -->
 
-<br/>
-```{r, fig.cap="Experimental design for fish vaccination (low level)", echo=FALSE , out.width='\\textwidth'}
-knitr::include_graphics("vaccination-low.png")
+<!-- #### Low level view (vaccination) {-} -->
+
+<!-- The fish can be vaccinated with only one of the four vaccine type (Control, Sa, Av, Sa+Av). Four treatment groups of 165 individuals are shown (in blue). Half of the fish (n=60) for each group will receive the second dose (subgroups in yellow). The fish that were not randomly selected to get the second dose of vaccine (booster) will be transferred to smaller aquaria prior to the first challenge test (week 4). -->
+
+<!-- <br/> -->
+<!-- ```{r, fig.cap="Experimental design for fish vaccination (low level)", echo=FALSE , out.width='\\textwidth'} -->
+<!-- knitr::include_graphics("vaccination-low.png") -->
+<!-- ``` -->
+
+
+<!-- ```{r eval=FALSE, include=FALSE} -->
+<!-- set.seed(2020)  -->
+<!-- spdes <- start_design("Experimental design for treatments (with control groups)") %>%  -->
+<!--   set_units(Group_fish_n120_ = 4, -->
+<!--             Samping_week_n_ = nested_in(Group_fish_n120_, 12)) %>%  -->
+<!--   set_trts(Vaccine_type_bacterial_strain = c("Control","Sa","Av","Sa+Av"), -->
+<!--            Sampling_tissue_origin   = c("Blood", "Mucus")) %>% -->
+<!--   allocate_trts(Vaccine_type_bacterial_strain ~ Group_fish_n120_,  -->
+<!--                 Sampling_tissue_origin  ~ Samping_week_n_) %>%  -->
+<!--   randomise_trts() -->
+<!-- plot(spdes) -->
+<!-- plot(spdes, view = "low") -->
+<!-- ``` -->
+
+<!-- #### High level view (sampling) {-} -->
+
+<!-- There are 4 experimental groups (the treatments) corresponding to 4 clusters. Each single group will be sampled for mucus and blood weekly during 12 weeks. <br/> -->
+<!-- <br/> -->
+<!-- ```{r, fig.cap="Experimental design for fish blood and mucus sampling (high level)", echo=FALSE , out.width='\\textwidth'} -->
+<!-- knitr::include_graphics("sampling-high.png") -->
+<!-- ``` -->
+
+<!-- #### Low level view (sampling) {-} -->
+
+<!-- In total there will be 48 unique samplings (4 groups* 12 weeks). The samples will be obtained by extracting mucus and blood from 8  individuals (8 individuals to obtain the final volume). In total 384 random individuals will be sampled. One individual can be sampled twice but not the same week. There are 4 experimental groups are forming 4 clusters of arrows. <br/> -->
+<!-- <br/> -->
+<!-- ```{r, fig.cap="Experimental design for fish blood and mucus sampling (low level)", echo=FALSE, out.width='\\textwidth'} -->
+<!-- knitr::include_graphics("sampling-low.png") -->
+<!-- ``` -->
+
+## Timelines
+
+#### Horizontal {-}
+
+The horizontal timeline is shown below: 
+
+```{r echo=FALSE, out.width='\\textwidth'}
+knitr::include_graphics("Timeline1HD.png")
+```
+```{r echo=FALSE, out.width='\\textwidth'}
+knitr::include_graphics("Timeline2HD.png")
+```
+```{r echo=FALSE, out.width='\\textwidth'}
+knitr::include_graphics("Timeline3HD.png")
+```
+```{r echo=FALSE, out.width='\\textwidth', fig.cap="The project planning horizontal timeline"}
+knitr::include_graphics("Timeline4HD.png")
 ```
 
-### Sampling 
-
-The sampling consists in the extraction of fish mucus and blood. The designs are shown below.
-```{r eval=FALSE, include=FALSE}
-set.seed(2020) 
-spdes <- start_design("Experimental design for treatments (with control groups)") %>% 
-  set_units(Group_fish_n120_ = 4,
-            Samping_week_n_ = nested_in(Group_fish_n120_, 12)) %>% 
-  set_trts(Vaccine_type_bacterial_strain = c("Control","Sa","Av","Sa+Av"),
-           Sampling_tissue_origin   = c("Blood", "Mucus")) %>%
-  allocate_trts(Vaccine_type_bacterial_strain ~ Group_fish_n120_, 
-                Sampling_tissue_origin  ~ Samping_week_n_) %>% 
-  randomise_trts()
-plot(spdes)
-plot(spdes, view = "low")
-```
-
-#### High level view (sampling) {-}
-
-There are 4 experimental groups (the treatments) corresponding to 4 clusters. Each single group will be sampled for mucus and blood weekly during 12 weeks. <br/>
-<br/>
-```{r, fig.cap="Experimental design for fish blood and mucus sampling (high level)", echo=FALSE , out.width='\\textwidth'}
-knitr::include_graphics("sampling-high.png")
-```
-
-#### Low level view (sampling) {-}
-
-In total there will be 48 unique samplings (4 groups* 12 weeks). The samples will be obtained by extracting mucus and blood from 8  individuals (8 individuals to obtain the final volume). In total 384 random individuals will be sampled. One individual can be sampled twice but not the same week. There are 4 experimental groups are forming 4 clusters of arrows. <br/>
-<br/>
-```{r, fig.cap="Experimental design for fish blood and mucus sampling (low level)", echo=FALSE, out.width='\\textwidth'}
-knitr::include_graphics("sampling-low.png")
-```
-
-## Timeline
+#### Vertical {-}
 
 The timeline of the project with the different steps from the beginning to the end.
 

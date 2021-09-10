@@ -3,7 +3,7 @@
     "path": "~/GitHub/Inactivated-vaccines-tilapia/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "1886680392",
     "contents": "",
     "dirty": false,
     "created": 1631043669349.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "238,14",
-        "scrollLine": "228",
-        "ignored_words": "acclimatation,aquaria\n"
+        "cursorPosition": "33,2330",
+        "scrollLine": "34",
+        "ignored_words": "acclimatation,aquaria,titer\n"
     },
     "folds": "",
-    "lastKnownWriteTime": 1631313048,
+    "lastKnownWriteTime": 1631315740,
     "encoding": "ISO8859-1",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1631313048343,
+    "last_content_update": 1631315740769,
     "read_only": false,
     "read_only_alternatives": []
 }

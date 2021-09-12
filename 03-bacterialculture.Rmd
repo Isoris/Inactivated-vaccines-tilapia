@@ -337,7 +337,7 @@ datatable(
 
 #### Linear Regression of Cells/mL vs. OD600	for Streptococcus agalactiae  {-}
 
-```{r echo=FALSE, fig.height=11, fig.width=16, fig.cap="Linear Regression of CFU/mL vs. OD600	for Streptococcus agalactiae", warning=FALSE, message=FALSE}
+```{r echo=FALSE, fig.height=11, fig.width=16, fig.cap="Linear Regression of Cells/mL vs. OD600	for Streptococcus agalactiae", warning=FALSE, message=FALSE}
 library(ggplot2)
 bactgrowthsa1 <- read_xlsx(path = "Bacterial growth strep.xlsx", sheet = "Sheet1")
 

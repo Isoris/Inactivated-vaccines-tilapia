@@ -13,11 +13,11 @@ text-align: justify}
 
 ### Water parameters
 
-Temperature, 26-32 ???C;
-pH, 7.5-8.5; 
+Temperature, 26–32 ◦C;
+pH, 7.5–8.5; 
 salinity, 0 ppt; 
 NH3, <1 ppm; 
-dissolved oxygen, 4-9 ppm) checked daily during the experiment period.
+dissolved oxygen, 4–9 ppm) checked daily during the experiment period.
 
 ```{r include=FALSE}
 #install.packages("DT")

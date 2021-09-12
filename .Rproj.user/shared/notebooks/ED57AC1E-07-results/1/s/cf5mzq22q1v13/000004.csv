@@ -1,5 +1,0 @@
-"0","# head(Mucosal_biva)"
-"0","# levels(Mucosal_biva$Treatment)"
-"0","ggplot(Mucosal_biva, aes(x=factor(Day_post_vaccination), y = OD_450_nm, colour=Treatment))+"
-"0","  geom_boxplot(size=3)+theme_qwen()+ggtitle(""Mucosal antibody response (IgM) to bivalent vaccine"")+"
-"0","  scale_color_viridis(discrete=TRUE, option=""viridis"")"

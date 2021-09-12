@@ -309,6 +309,31 @@
             "type": "book"
         },
         {
+            "URL": "https://CRAN.R-project.org/package=ggsignif",
+            "author": [
+                {
+                    "family": "Ahlmann-Eltze",
+                    "given": "Constantin"
+                },
+                {
+                    "family": "Patil",
+                    "given": "Indrajeet"
+                }
+            ],
+            "id": "R-ggsignif",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "R package version 0.6.2",
+            "title": "Ggsignif: Significance brackets for ggplot2",
+            "title-short": "Ggsignif",
+            "type": "book"
+        },
+        {
             "URL": "https://CRAN.R-project.org/package=gridExtra",
             "author": [
                 {
@@ -1011,6 +1036,32 @@
             "title": "ggplot2: Elegant graphics for data analysis",
             "title-short": "ggplot2",
             "type": "book"
+        },
+        {
+            "DOI": "10.31234/osf.io/7awm6",
+            "URL": "https://psyarxiv.com/7awm6",
+            "author": [
+                {
+                    "family": "Constantin",
+                    "given": "Ahlmann-Eltze"
+                },
+                {
+                    "family": "Patil",
+                    "given": "Indrajeet"
+                }
+            ],
+            "container-title": "PsyArxiv",
+            "id": "ggsignif2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "ggsignif: R package for displaying significance brackets for ’ggplot2’",
+            "title-short": "ggsignif",
+            "type": "article-journal"
         },
         {
             "URL": "https://yihui.org/knitr/",

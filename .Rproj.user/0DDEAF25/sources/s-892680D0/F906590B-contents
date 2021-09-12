@@ -1,0 +1,195 @@
+#install.packages("ggstatsplot")
+library(ggstatplot)
+library("gridExtra")
+library(htmltools)
+library(psych)
+library(Hmisc)
+library(readxl)
+library(tidyverse)
+library(summarytools)
+library(dplyr)
+library(writexl)
+library(gapminder)
+library("readxl")
+library(plyr)
+library("dplyr")
+library("ggplot2")
+library("RColorBrewer")
+library(rstatix)
+library(ggpubr)
+library(reshape2)
+library("gridExtra")
+library(htmlTable)
+
+# Choose path from the lower right panel in files, go to the directory containing the datasheet to load, and then set as working directory. 
+# The datasheet excel should be in the 'R working directory'.
+setwd("C:/Users/PC/Desktop/Year 2021/Classes/Statistics for aquaculture/practicum 5")
+practi5 <- read_xlsx("Practicium5-QA-MeansMediansSD_allstats.xlsx", sheet ="R_data" )
+round(practi5, digits = 0)
+practi5.long <- stack(practi5, select = 2:7) %>%  na.omit()
+
+my_comparisons <- list( c("Male0", "MaleNA"), 
+                        c("Male0", "MaleMV"), 
+                        c("MaleNA", "MaleMV"),
+                        c("Female0","FemaleNA"),
+                        c("Female0", "FemaleMV"), 
+                        c("FemaleNA", "FemaleMV")) 
+
+practi5.long %>% mutate(class = fct_reorder(ind, values, .fun='median')) %>% 
+  ggplot(aes(x=reorder(ind, values), y = values, fill=ind))+geom_boxplot(notch = F)+
+  scale_fill_brewer(palette = "Set3", name = "Scenarios")+
+  ggtitle("Fig. 1 Comparison of the survival of male and female in three different scenarios ")+
+  geom_jitter(alpha=0.3,)+
+  xlab("Scenarios")+ylab("Number of animals in happas")+
+  stat_compare_means(method = "t.test", hide.ns = F, na.rm = T, comparisons = my_comparisons, label = "p.signif")
+stat_co
+summary <- psych::describe(practi5, quant=c(.5,0.25,0.33,0.5,0.66,0.75,0.95))
+
+write_xlsx(summary, "Practicum5-QA-MeansMediansSD_allstatsFINAL.xlsx")
+
+attach(Mucosal_mono)
+library(ggsignif)
+ggplot(Mucosal_mono,aes(x=factor(Day_post_vaccination), y=value)) + 
+  geom_boxplot(aes(fill=Species)) + # define the fill argument here
+  facet_grid(treatment~Species) +
+  ylim(0,15)+
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_signif(test="wilcox.test", comparisons = combn(levels(mydf$variable),2, simplify = F)[-4],
+              step_increase = 0.2)
+
+
+
+
+# Load myeloma data from survminer package
+if(!require(survminer)) install.packages("survminer")
+data("myeloma", package = "survminer")
+
+# Perform the test
+compare_means(OD_450_nm ~ Treatment,  data = Mucosal_mono,
+              method = "t.test", group.by = "week_post_vaccination")
+
+
+Mucosal_mono$week_post_vaccination <- as.factor(Mucosal_mono$week_post_vaccination)
+# A tibble: 7 x 8
+.y. group1           group2            p        p.adj p.format p.signif method
+<chr>  <chr>            <chr>        <dbl>        <dbl>    <chr>    <chr>  <chr>
+  1 DEPDC1  .all.       Cyclin D-1 1.496896e-01 4.490687e-01  0.14969       ns T-test
+2 DEPDC1  .all.       Cyclin D-2 5.231428e-01 1.000000e+00  0.52314       ns T-test
+3 DEPDC1  .all.     Hyperdiploid 2.815333e-04 1.689200e-03  0.00028      *** T-test
+4 DEPDC1  .all. Low bone disease 5.083985e-03 2.541992e-02  0.00508       ** T-test
+5 DEPDC1  .all.              MAF 8.610664e-02 3.444265e-01  0.08611       ns T-test
+6 DEPDC1  .all.            MMSET 5.762908e-01 1.000000e+00  0.57629       ns T-test
+7 DEPDC1  .all.    Proliferation 1.241416e-09 8.689910e-09  1.2e-09     **** T-test
+# Visualize the expression profile
+
+attach(Mucosal_mono)
+library(ggsignif)
+Mucosal_mono$Day_post_vaccination <- as.factor(Mucosal_mono$Day_post_vaccination)
+my_comparisons2 <- list(c("Monovalent_Sa", "Control_Sa"),
+                        c("Monovalent_Av", "Control_Av")) 
+Mucosal_mono <- Mucosal_mono %>% mutate(class = fct_reorder(Treatment, OD_450_nm, .fun='median')) 
+
+Mucosal_mono$Day_post_vaccination <- as.factor(Mucosal_mono$Day_post_vaccination)
+ggboxplot(Mucosal_mono, x="Treatment", y = "OD_450_nm", fill = "Treatment") +
+  rotate_x_text(angle = 45)+
+  stat_compare_means(label = "p.signif", method = "t.test",comparisons = my_comparisons2, hide.ns = T, )+
+  facet_wrap(~Day_post_vaccination, nrow = 1,labeller = label_wrap_gen(multi_line=FALSE), strip.position = "bottom")+
+  theme_qwen()+
+  theme(strip.placement = "outside", axis.text.x = element_blank(), axis.title.x = element_blank(),
+        axis.ticks.x = element_blank(), axis.line = element_blank())+ylim(0,1.20*max(Mucosal_mono$OD_450_nm))+
+  scale_fill_viridis_d(alpha = 0.8)+theme(legend.position = "bottom")+geom_point(aes(colour=Treatment))+
+  scale_color_viridis_d(alpha = 0.8)
+
+mypal = pal_npg("nrc")(10)
+  geom_hline(yintercept = mean(Mucosal_mono$OD_450_nm), linetype = 2)+
+x=reorder(ind, values)
+data("ToothGrowth")
+head(ToothGrowth)
+
+# Two independent groups
+#:::::::::::::::::::::::::::::::::::::::::::::::::
+p <- ggboxplot(ToothGrowth, x = "supp", y = "len",
+               color = "supp", palette = "npg", add = "jitter")
+
+#  Add p-value
+p + stat_compare_means()
+# Change method
+p + stat_compare_means(method = "t.test")
+
+# Paired samples
+#:::::::::::::::::::::::::::::::::::::::::::::::::
+ggpaired(ToothGrowth, x = "supp", y = "len",
+         color = "supp", line.color = "gray", line.size = 0.4,
+         palette = "npg")+
+  stat_compare_means(paired = TRUE)
+
+# More than two groups
+#:::::::::::::::::::::::::::::::::::::::::::::::::
+# Pairwise comparisons: Specify the comparisons you want
+my_comparisons <- list( c("0.5", "1"), c("1", "2"), c("0.5", "2") )
+ggboxplot(ToothGrowth, x = "dose", y = "len",
+          color = "dose", palette = "npg")+
+  # Add pairwise comparisons p-value
+  stat_compare_means(comparisons = my_comparisons, label.y = c(29, 35, 40))+
+  stat_compare_means(label.y = 45)     # Add global Anova p-value
+
+# Multiple pairwise test against a reference group
+ggboxplot(ToothGrowth, x = "dose", y = "len",
+          color = "dose", palette = "npg")+
+  stat_compare_means(method = "anova", label.y = 40)+ # Add global p-value
+  stat_compare_means(aes(label = ..p.signif..),
+                     method = "t.test", ref.group = "0.5")
+
+# Multiple grouping variables
+#:::::::::::::::::::::::::::::::::::::::::::::::::
+# Box plot facetted by "dose"
+p <- ggboxplot(ToothGrowth, x = "supp", y = "len",
+               color = "supp", palette = "npg",
+               add = "jitter",
+               facet.by = "dose", short.panel.labs = FALSE)
+# Use only p.format as label. Remove method name.
+p + stat_compare_means(
+  aes(label = paste0("p = ", ..p.format..))
+)
+
+[Package
+
+# Load data
+#:::::::::::::::::::::::::::::::::::::::
+data("ToothGrowth")
+df <- ToothGrowth
+
+# One-sample test
+#:::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ 1, df, mu = 0)
+
+# Two-samples unpaired test
+#:::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ supp, df)
+
+# Two-samples paired test
+#:::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ supp, df, paired = TRUE)
+
+# Compare supp levels after grouping the data by "dose"
+#::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ supp, df, group.by = "dose")
+
+# pairwise comparisons
+#::::::::::::::::::::::::::::::::::::::::
+# As dose contains more thant two levels ==>
+# pairwise test is automatically performed.
+compare_means(len ~ dose, df)
+
+# Comparison against reference group
+#::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ dose, df, ref.group = "0.5")
+
+# Comparison against all
+#::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ dose, df, ref.group = ".all.")
+
+# Anova and kruskal.test
+#::::::::::::::::::::::::::::::::::::::::
+compare_means(len ~ dose, df, method = "anova")
+compare_means(len ~ dose, df, method = "kruskal.test")

@@ -1,0 +1,90 @@
+"0","attach(Mucosal_mono)"
+"2","The following objects are masked from Mucosal_mono (pos = 3):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 4):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 5):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 6):
+
+    Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 7):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 8):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 9):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 10):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 11):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 12):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 13):
+
+    class, Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 17):
+
+    Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 39):
+
+    Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"2","The following objects are masked from Mucosal_mono (pos = 41):
+
+    Day_post_vaccination, OD_450_nm, Treatment, week_post_vaccination
+
+"
+"0","library(ggsignif)"
+"0",""
+"0","Mucosal_mono$Day_post_vaccination <- as.factor(Mucosal_mono$Day_post_vaccination)"
+"0","my_comparisons2 <- list(c(""Monovalent_Sa"", ""Control_Sa""),"
+"0","                        c(""Monovalent_Av"", ""Control_Av"")) "
+"0","Mucosal_mono <- Mucosal_mono %>% mutate(class = fct_reorder(Treatment, OD_450_nm, .fun='median')) "
+"0",""
+"0","Mucosal_mono$Day_post_vaccination <- as.factor(Mucosal_mono$Day_post_vaccination)"
+"0","ggboxplot(Mucosal_mono, x=""Treatment"", y = ""OD_450_nm"", fill = ""Treatment"") +"
+"0","  rotate_x_text(angle = 45)+"
+"0","  stat_compare_means(label = ""p.signif"", method = ""t.test"",comparisons = my_comparisons2, hide.ns = T, show.legend = T"
+"0","                    )+"
+"0","  facet_wrap(~Day_post_vaccination, nrow = 1,labeller = label_wrap_gen(multi_line=FALSE), strip.position = ""bottom"")+"
+"0","  theme_qwen()+"
+"0","  theme(strip.placement = ""outside"", axis.text.x = element_blank(), axis.title.x = element_blank(),"
+"0","        axis.ticks.x = element_blank(),axis.line.x = element_blank(), panel.grid.major.x=element_blank())+ylim(0,1.20*max(Mucosal_mono$OD_450_nm))+"
+"0","  scale_fill_viridis_d(alpha = 0.8)+theme(legend.position = ""bottom"")+geom_point(aes(colour=Treatment))+"
+"0","  scale_color_viridis_d(alpha = 0.8)+theme(panel.grid.major = element_blank(), panel.grid = element_blank(),line = element_blank()"
+"0","                                )"

@@ -1,0 +1,12 @@
+"0","# head(Mucosal_mono)"
+"2","Warning message:
+"
+"2","In rm(list = wsconn_address(handle), envir = private$wsconns) :"
+"2","
+ "
+"2"," object '2a2c5425b20' not found
+"
+"0","# levels(Mucosal_mono$Treatment)"
+"0","ggplot(Mucosal_mono, aes(x=factor(Day_post_vaccination), y = OD_450_nm, colour=Treatment))+"
+"0","  geom_boxplot(size=3)+theme_qwen()+ggtitle(""Mucosal antibody response (IgM) to monovalent vaccines"")+"
+"0","  scale_color_viridis(discrete=TRUE, option=""viridis"")"

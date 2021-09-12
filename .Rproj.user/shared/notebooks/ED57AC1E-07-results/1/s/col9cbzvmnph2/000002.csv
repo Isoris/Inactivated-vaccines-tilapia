@@ -1,0 +1,8 @@
+"0","# head(Mucosal_mono)"
+"0","# levels(Mucosal_mono$Treatment)"
+"0","ggplot(Mucosal_mono, aes(x=factor(Day_post_vaccination), y = OD_450_nm, colour=Treatment))+"
+"0","  geom_boxplot(size=3)+theme_qwen()+ggtitle(""Mucosal antibody response (IgM) to monovalent vaccines"")+"
+"0","  scale_color_viridis(discrete=TRUE, option=""viridis"")"
+"2","Warning:"
+"2"," Removed 3 rows containing non-finite values (stat_boxplot).
+"

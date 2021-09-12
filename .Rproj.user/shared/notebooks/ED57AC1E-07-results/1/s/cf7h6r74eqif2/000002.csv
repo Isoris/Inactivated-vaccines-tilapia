@@ -104,7 +104,7 @@
 "0","    #This sets the text font, size and colour for the axis test, as well as setting the margins and removes lines and ticks."
 "0","    #In some cases, axis lines and axis ticks are things we would want to have in the chart - the cookbook shows examples of how to do so."
 "0","    axis.title = element_text(family=font, size = 22, face = ""bold"", color=""#2C6975""),"
-"0","    axis.text = element_text(family=font, size = 9, face = ""bold"", color=""#2C6975""),"
+"0","    axis.text = element_text(family=font, size = 16, face = ""bold"", color=""#2C6975""),"
 "0","    axis.text.x = ggplot2::element_text(margin=ggplot2::margin(5, b = 10), family=font, color=""#2C6975""),"
 "0","    axis.ticks = ggplot2::element_blank(),"
 "0","    axis.line = element_line(color = ""#E9765B"", arrow = arrow(length = unit(0.6, ""lines""), type = ""closed"")),"

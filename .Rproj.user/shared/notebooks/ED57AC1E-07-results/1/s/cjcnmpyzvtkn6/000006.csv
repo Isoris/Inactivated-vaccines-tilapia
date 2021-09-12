@@ -1,0 +1,6 @@
+"0","# head(Systemic_mono)"
+"0","# levels(Systemic_mono$Treatment)"
+"0","ggplot(Systemic_mono, aes(x=factor(Day_post_vaccination), y = OD_450_nm, color=Treatment))+"
+"0","  geom_boxplot(size=3)+theme_qwen()+ggtitle(""Systemic antibody response (IgM) to monovalent vaccines"")+"
+"0","  scale_color_viridis(discrete=TRUE, option=""viridis"")"
+"0",""

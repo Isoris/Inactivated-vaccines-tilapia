@@ -1,0 +1,37 @@
+rm(list = ls())
+inp.data <- read.table("data2.txt", header = T)
+
+### Using R base
+library(agricolae)
+TH_com = HSD.test(aov(value~traet_con, data=inp.data), trt = "traet_con", group = T)
+LABELS <- TH_com$groups[order(row.names(TH_com$groups)), ]
+
+p <- boxplot(frame.plot=TRUE, inp.data$value ~ inp.data$traet_con ,xlab = "Treat_condition", ylim=c(min(inp.data$value) , 1.15*max(inp.data$value)) ,  ylab="Trait (unit)" , main="",col = c('red','blue'),axes = F)
+# axis(2,1000*round(seq(min(inp.data$value), 1.1*max(inp.data$value),l = 6)/1000))
+axis(2,round(seq(min(inp.data$value) , 1.1*max(inp.data$value),l = 6),3))
+lab = sapply(strsplit(p$names,'_'), function(x)x[1])
+axis(1, at=seq(1.5,by = 2,l = 4), labels=lab[2*(1:4)])
+abline(v = seq(2.5,by = 2,l = 3),col = 'gray60' , lty = 3)
+points(.5,1.15*max(inp.data$value),pch = 15, col = 'blue',cex = 2)
+text(1.1,1.15*max(inp.data$value),"control")
+points(.5,1.07*max(inp.data$value),pch = 15, col = 'red',cex = 2)
+text(1,1.07*max(inp.data$value),'case')
+over <- 0.13 * max( p$stats[nrow(p$stats),] )
+text( c(1:nlevels(as.factor(rownames(LABELS)))) , p$stats[nrow(p$stats),]+over , LABELS[,2])
+
+### Using ggplot2
+library(dplyr)
+library(ggplot2)
+value_max = inp.data %>% group_by(traet_con) %>% summarize(max_value = max(value))
+hsd=HSD.test(aov(value~traet_con, data=inp.data), trt = "traet_con", group = T)
+sig.letters <- hsd$groups[order(row.names(hsd$groups)), ]
+
+p <- ggplot(data = inp.data, aes(x = traet_con, y = value))+ 
+  geom_boxplot(aes(fill= condition))+theme(legend.position =  c(.95, 0.1), legend.background = element_rect(fill = NA))+
+  geom_text(data = value_max, aes(x=traet_con, y = 0.01 + max_value, label = sig.letters$groups), vjust=-0.3)+
+  stat_boxplot(geom = 'errorbar', width = 0.2)+
+  geom_vline(xintercept = c(2.5,4.5,6.5), linetype="dotted", color = "blue", size=.5)+
+  # scale_x_discrete(labels=c("                       Treat1", "", "                         Treat2", "", "                          Treat3", "", "                        Treat4", ""))+
+  labs(x = "Treat_condition", y = "Trait (unit)")+
+  theme(axis.ticks = element_blank())+
+  scale_x_discrete(labels=c("                       Treat1", "", "                         Treat2", "", "                          Treat3", "", "                        Treat4", "")); p

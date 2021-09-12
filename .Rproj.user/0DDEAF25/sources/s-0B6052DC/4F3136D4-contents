@@ -137,6 +137,8 @@ theme_qwen_small<- function() {
 ```{r include=FALSE}
 # Systemic antibody response
 library(survival)
+library(rstatix)
+library(ggpubr)
 Systemic_mono <- readxl::read_xlsx(path = "Systemic antibody response to vaccines.xlsx", 
                                    sheet = "Monovalent") 
 Mucosal_mono <- readxl::read_xlsx(path = "Mucosal antibody response to vaccines.xlsx",
@@ -160,8 +162,8 @@ Mucosal_biva$Treatment <- as.factor(Mucosal_biva$Treatment)
 ```{r, fig.height=11, fig.width=16, fig.cap="Systemic antibody response (IgM) to monovalent vaccines", echo=FALSE}
 # head(Systemic_mono)
 # levels(Systemic_mono$Treatment)
-ggplot(Systemic_mono, aes(x=Day_post_vaccination, y = OD_450_nm, color=Treatment))+
-  geom_point(size=3)+theme_qwen()+ggtitle("Systemic antibody response (IgM) to monovalent vaccines")+
+ggplot(Systemic_mono, aes(x=factor(Day_post_vaccination), y = OD_450_nm, color=Treatment))+
+  geom_boxplot(size=3)+theme_qwen()+ggtitle("Systemic antibody response (IgM) to monovalent vaccines")+
   scale_color_viridis(discrete=TRUE, option="viridis")
 
 ```
@@ -171,9 +173,17 @@ ggplot(Systemic_mono, aes(x=Day_post_vaccination, y = OD_450_nm, color=Treatment
 ```{r, fig.height=11, fig.width=16, fig.cap="Systemic antibody response (IgM) to bivalent vaccine", echo=FALSE}
 # head(Systemic_biva)
 # levels(Systemic_biva$Treatment)
-ggplot(Systemic_biva, aes(x=Day_post_vaccination, y = OD_450_nm, colour=Treatment))+
-  geom_point(size=3)+theme_qwen()+ggtitle("Systemic antibody response (IgM) to bivalent vaccine")+
-  scale_color_viridis(discrete=TRUE, option="viridis")
+my_comparisons <- list( c("Bivalent_Sa", "Bivalent_Av"), 
+                        c("Bivalent_Sa", "Control_Av"), 
+                        c("Bivalent_Sa", "Control_Sa"),
+                        c("Bivalent_Av", "Control_Av"), 
+                        c("Bivalent_Av", "Control_Sa"),
+                        c("Control_Sa", "Control_Av")) 
+
+ggplot(Systemic_biva, aes(x=factor(Day_post_vaccination), y = OD_450_nm, colour=Treatment))+
+  geom_boxplot(size=3)+theme_qwen()+ggtitle("Systemic antibody response (IgM) to bivalent vaccine")+
+  scale_color_viridis(discrete=TRUE, option="viridis", alpha = 0.95)+stat_compare_means(paired = T)
+  
 ```
 
 ## Mucosal antibody response
@@ -193,8 +203,8 @@ ggplot(Mucosal_mono, aes(x=Day_post_vaccination, y = OD_450_nm, colour=Treatment
 ```{r, fig.height=11, fig.width=16, fig.cap="Mucosal antibody response (IgM) to bivalent vaccine", echo=FALSE}
 # head(Mucosal_biva)
 # levels(Mucosal_biva$Treatment)
-ggplot(Mucosal_biva, aes(x=Day_post_vaccination, y = OD_450_nm, colour=Treatment))+
-  geom_point(size=3)+theme_qwen()+ggtitle("Mucosal antibody response (IgM) to bivalent vaccine")+
+ggplot(Mucosal_biva, aes(x=factor(Day_post_vaccination), y = OD_450_nm, colour=Treatment))+
+  geom_boxplot(size=3)+theme_qwen()+ggtitle("Mucosal antibody response (IgM) to bivalent vaccine")+
   scale_color_viridis(discrete=TRUE, option="viridis")
 ```
 

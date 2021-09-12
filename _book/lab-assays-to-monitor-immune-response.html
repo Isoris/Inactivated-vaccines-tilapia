@@ -24,7 +24,7 @@
 <meta name="author" content="By Quentin Andres ~ MSc. Aquaculture and Aquatic Resources Management, Asian Institute of Technology, Pathum Thani, Thailand" />
 
 
-<meta name="date" content="2021-09-11" />
+<meta name="date" content="2021-09-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,6 +53,23 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.19/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
 <html>
   
   <head>
@@ -190,19 +207,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="bacterial-isolation-from-the-fish-tissues.html"><a href="bacterial-isolation-from-the-fish-tissues.html"><i class="fa fa-check"></i><b>5</b> Bacterial isolation from the fish tissues</a></li>
 <li class="chapter" data-level="6" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>6</b> Preparation of bacterial culture and formalin-killed vaccines</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="cross.html"><a href="cross.html#recovery-of-the-two-strains-s.agalactiae-and-a.veronii-using-tsatsb-for-24h"><i class="fa fa-check"></i><b>6.1</b> Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h</a></li>
-<li class="chapter" data-level="6.2" data-path="cross.html"><a href="cross.html#bacterial-culture"><i class="fa fa-check"></i><b>6.2</b> Bacterial culture</a>
+<li class="chapter" data-level="6.1" data-path="cross.html"><a href="cross.html#principles-of-bacterial-culture"><i class="fa fa-check"></i><b>6.1</b> Principles of bacterial culture</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="cross.html"><a href="cross.html#growth-curves"><i class="fa fa-check"></i><b>6.2.1</b> Growth-curves</a></li>
-<li class="chapter" data-level="6.2.2" data-path="cross.html"><a href="cross.html#count-viable-and-dead-cells"><i class="fa fa-check"></i><b>6.2.2</b> Count viable and dead cells</a></li>
-<li class="chapter" data-level="6.2.3" data-path="cross.html"><a href="cross.html#estimate-biomass-with-spectrophotometer-for-600-nm"><i class="fa fa-check"></i><b>6.2.3</b> Estimate biomass with spectrophotometer for ??=600 nm</a></li>
+<li class="chapter" data-level="6.1.1" data-path="cross.html"><a href="cross.html#generation-of-microbial-growth-curves-according-to-od600-λ600-nm"><i class="fa fa-check"></i><b>6.1.1</b> Generation of microbial growth-curves according to OD600 (λ=600 nm)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="cross.html"><a href="cross.html#production-of-inactivated-vaccines"><i class="fa fa-check"></i><b>6.3</b> Production of inactivated vaccines</a>
+<li class="chapter" data-level="6.2" data-path="cross.html"><a href="cross.html#bacterial-strains"><i class="fa fa-check"></i><b>6.2</b> Bacterial strains</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa"><i class="fa fa-check"></i><b>6.3.1</b> Production of vaccine Sa</a></li>
-<li class="chapter" data-level="6.3.2" data-path="cross.html"><a href="cross.html#production-of-vaccine-av"><i class="fa fa-check"></i><b>6.3.2</b> Production of vaccine Av</a></li>
-<li class="chapter" data-level="6.3.3" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa-av"><i class="fa fa-check"></i><b>6.3.3</b> Production of vaccine Sa + Av</a></li>
-<li class="chapter" data-level="6.3.4" data-path="cross.html"><a href="cross.html#production-of-vaccine-control"><i class="fa fa-check"></i><b>6.3.4</b> Production of vaccine Control</a></li>
+<li class="chapter" data-level="6.2.1" data-path="cross.html"><a href="cross.html#aeromonas-veronii"><i class="fa fa-check"></i><b>6.2.1</b> Aeromonas veronii</a></li>
+<li class="chapter" data-level="6.2.2" data-path="cross.html"><a href="cross.html#streptoccocus-agalactiae"><i class="fa fa-check"></i><b>6.2.2</b> Streptoccocus agalactiae</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="cross.html"><a href="cross.html#bacterial-culture"><i class="fa fa-check"></i><b>6.3</b> Bacterial culture</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="cross.html"><a href="cross.html#laboratory-settings"><i class="fa fa-check"></i><b>6.3.1</b> Laboratory settings</a></li>
+<li class="chapter" data-level="6.3.2" data-path="cross.html"><a href="cross.html#recovery-of-strains"><i class="fa fa-check"></i><b>6.3.2</b> Recovery of strains</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="cross.html"><a href="cross.html#standard-a.veronii"><i class="fa fa-check"></i><b>6.4</b> Standard A.veronii</a></li>
+<li class="chapter" data-level="6.5" data-path="cross.html"><a href="cross.html#standard-s.agalactiae"><i class="fa fa-check"></i><b>6.5</b> Standard S.agalactiae</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="cross.html"><a href="cross.html#count-viable-and-dead-cells"><i class="fa fa-check"></i><b>6.5.1</b> Count viable and dead cells</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="cross.html"><a href="cross.html#production-of-vaccines"><i class="fa fa-check"></i><b>6.6</b> Production of vaccines</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa"><i class="fa fa-check"></i><b>6.6.1</b> Production of vaccine Sa</a></li>
+<li class="chapter" data-level="6.6.2" data-path="cross.html"><a href="cross.html#production-of-vaccine-av"><i class="fa fa-check"></i><b>6.6.2</b> Production of vaccine Av</a></li>
+<li class="chapter" data-level="6.6.3" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa-av"><i class="fa fa-check"></i><b>6.6.3</b> Production of vaccine Sa + Av</a></li>
+<li class="chapter" data-level="6.6.4" data-path="cross.html"><a href="cross.html#production-of-vaccine-control"><i class="fa fa-check"></i><b>6.6.4</b> Production of vaccine Control</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html"><i class="fa fa-check"></i><b>7</b> Sample collection and Immunization</a>
@@ -298,7 +327,7 @@ text-align: justify}
 <h2><span class="header-section-number">8.3</span> Agglutination test</h2>
 <div id="qualitative-detection-of-the-presence-of-antibodies-by-agglutination" class="section level3" number="8.3.1">
 <h3><span class="header-section-number">8.3.1</span> Qualitative detection of the presence of antibodies by agglutination</h3>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-17"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
 <img src="Agglutination1.png" alt="Agglutination test on a blade - Qualitative antibody agglutination test with the antigen: A sample from fish containing antibodies istested against a specific antigen. Credits: Ha Thanh Dong" width="738" />
 <p class="caption">
 Figure 8.1: Agglutination test on a blade - Qualitative antibody agglutination test with the antigen: A sample from fish containing antibodies istested against a specific antigen. Credits: Ha Thanh Dong
@@ -307,7 +336,7 @@ Figure 8.1: Agglutination test on a blade - Qualitative antibody agglutination t
 </div>
 <div id="quantitative-antibody-agglutination-titration" class="section level3" number="8.3.2">
 <h3><span class="header-section-number">8.3.2</span> Quantitative antibody agglutination titration</h3>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-48"></span>
 <img src="Agglutination2.png" alt="Quantitative agglutination test with serial dilutions - A sample obtained from the fish after immunization is tested against PBS (control (Ct)) or against the specific agglutinating Ag at different serial dilutions. Credits: Ha Thanh Dong" width="738" />
 <p class="caption">
 Figure 8.2: Quantitative agglutination test with serial dilutions - A sample obtained from the fish after immunization is tested against PBS (control (Ct)) or against the specific agglutinating Ag at different serial dilutions. Credits: Ha Thanh Dong

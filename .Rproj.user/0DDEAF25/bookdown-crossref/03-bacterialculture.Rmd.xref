@@ -1,12 +1,42 @@
-h1:cross Preparation of bacterial culture and formalin-killed vaccines
-h2:recovery-of-the-two-strains-s.agalactiae-and-a.veronii-using-tsatsb-for-24h Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h
-h2:bacterial-culture Bacterial culture
-h3:growth-curves Growth-curves
-h3:count-viable-and-dead-cells Count viable and dead cells
-h3:estimate-biomass-with-spectrophotometer-for-600-nm Estimate biomass with spectrophotometer for ??=600 nm
-h2:production-of-inactivated-vaccines Production of inactivated vaccines
-h3:production-of-vaccine-sa Production of vaccine Sa
-h3:production-of-vaccine-av Production of vaccine Av
-h3:production-of-vaccine-sa-av Production of vaccine Sa + Av
-h3:production-of-vaccine-control Production of vaccine Control
+h1:bacterial-culture Bacterial culture
+h2:principles-of-bacterial-culture Principles of bacterial culture
+h3:generation-of-microbial-growth-curves-according-to-od600-λ600-nm Generation of microbial growth-curves according to OD600 (λ=600 nm)
+h3:live-and-dead-cells-counts-using-hemocytometer-under-light-microscopy Live and dead cells counts using hemocytometer under light microscopy
+h2:bacterial-strains Bacterial strains
+h3:aeromonas-veronii Aeromonas veronii
+h3:streptoccocus-agalactiae Streptoccocus agalactiae
+h2:bacterial-culture-1 Bacterial culture
+h3:laboratory-settings Laboratory settings
+h3:recovery-of-strains Recovery of strains
+h2:standard-a.veronii Standard A.veronii
+h4:standard-growth-curve-od600-for-aeromonas-veronii Standard growth curve OD600 for Aeromonas veronii
+h4:exponential-regression-of-od600-growth-curve-for-aeromonas-veronii Exponential Regression of OD600 Growth Curve for Aeromonas veronii
+h4:standard-growth-curve-cfuml-for-aeromonas-veronii Standard growth curve CFU/mL for Aeromonas veronii
+h4:exponential-regression-of-cfuml-growth-curve-for-aeromonas-veronii Exponential Regression of CFU/mL Growth Curve for Aeromonas veronii
+h4:standard-growth-curve-cellsml-obtained-by-microscopic-count-for-aeromonas-veronii Standard growth curve Cells/mL obtained by microscopic count for Aeromonas veronii
+h4:exponential-regression-of-cellsml-growth-curve-obtained-by-microscopic-count-for-aeromonas-veronii Exponential Regression of Cells/mL Growth Curve obtained by microscopic count for Aeromonas veronii
+h4:linear-regression-of-cfuml-vs.-od600-for-aeromonas-veronii Linear Regression of CFU/mL vs. OD600 for Aeromonas veronii
+h4:linear-regression-of-cellsml-vs.-od600-for-aeromonas-veronii Linear Regression of Cells/mL vs. OD600 for Aeromonas veronii
+h4:generation-time-by-od600-for-aeromonas-veronii Generation time by OD600 for Aeromonas veronii
+h4:generation-time-by-cfuml-for-aeromonas-veronii Generation time by CFU/mL for Aeromonas veronii
+h4:generation-time-by-cellsml-for-aeromonas-veronii Generation time by Cells/mL for Aeromonas veronii
+h4:data Data
+h2:standard-s.agalactiae Standard S.agalactiae
+h4:standard-growth-curve-od600-for-streptococcus-agalactiae Standard growth curve OD600 for Streptococcus agalactiae
+h4:exponential-regression-of-od600-growth-curve-for-streptococcus-agalactiae Exponential Regression of OD600 Growth Curve for Streptococcus agalactiae
+h4:standard-growth-curve-cfuml-for-streptococcus-agalactiae Standard growth curve CFU/mL for Streptococcus agalactiae
+h4:exponential-regression-of-cfuml-growth-curve-streptococcus-agalactiae Exponential Regression of CFU/mL Growth Curve Streptococcus agalactiae
+h4:standard-growth-curve-cellsml-obtained-by-microscopic-count-for-streptococcus-agalactiae Standard growth curve Cells/mL obtained by microscopic count for Streptococcus agalactiae
+h4:exponential-regression-of-cellsml-growth-curve-obtained-by-microscopic-count-for-streptococcus-agalactiae Exponential Regression of Cells/mL Growth Curve obtained by microscopic count for Streptococcus agalactiae
+h4:linear-regression-of-cfuml-vs.-od600-for-streptococcus-agalactiae Linear Regression of CFU/mL vs. OD600 for Streptococcus agalactiae
+h4:linear-regression-of-cellsml-vs.-od600-for-streptococcus-agalactiae Linear Regression of Cells/mL vs. OD600 for Streptococcus agalactiae
+h4:generation-time-by-od600-for-streptococcus-agalactiae Generation time by OD600 for Streptococcus agalactiae
+h4:generation-time-by-cfuml-for-streptococcus-agalactiae Generation time by CFU/mL for Streptococcus agalactiae
+h4:generation-time-by-cellsml-for-streptococcus-agalactiae Generation time by Cells/mL for Streptococcus agalactiae
+h4:data-1 Data
+h1:formalin-killed-vaccines Formalin-killed vaccines
+h2:production-of-vaccine-sa Production of vaccine Sa
+h2:production-of-vaccine-av Production of vaccine Av
+h2:production-of-vaccine-sa-av Production of vaccine Sa + Av
+h2:production-of-vaccine-control Production of vaccine Control
 

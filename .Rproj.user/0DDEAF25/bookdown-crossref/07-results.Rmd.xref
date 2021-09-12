@@ -5,11 +5,11 @@ h3:bivalent-vaccine Bivalent vaccine
 h2:mucosal-antibody-response Mucosal antibody response
 h3:monovalent-vaccines-1 Monovalent vaccines
 h3:bivalent-vaccine-1 Bivalent vaccine
-h2:challenge-test-1-single-group Challenge test 1 (Single group)
+h2:challenge-test-1-unique Challenge test 1 (Unique)
 h3:relative-percentage-survival-single-dose Relative percentage survival (single dose)
 h3:kaplan-meier-survival-estimates-for-the-first-challenge-test Kaplan-Meier survival estimates for the first challenge test
 h4:monovalent-versus-bivalent-formulations Monovalent versus bivalent formulations
-h2:challenge-test-2-booster-group Challenge test 2 (Booster group)
+h2:challenge-test-2-booster Challenge test 2 (Booster)
 h3:relative-percentage-survival-booster Relative percentage survival (booster)
 h3:kaplan-meier-survival-estimates-for-the-second-challenge-test Kaplan-Meier survival estimates for the second challenge test
 h4:monovalent-versus-bivalent-formulations-1 Monovalent versus bivalent formulations

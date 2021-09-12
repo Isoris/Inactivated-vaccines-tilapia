@@ -1,0 +1,7 @@
+"0","bactgrowthav9 <- read_xlsx(path = ""Bacterial growth aero.xlsx"", sheet = ""Sheet9"")"
+"0","datatable("
+"0","  bactgrowthav9, extensions = 'Buttons', options = list("
+"0","    dom = 'Bfrtip',"
+"0","    buttons = c('copy', 'csv', 'excel', 'pdf', 'print')"
+"0","  )"
+"0",")"

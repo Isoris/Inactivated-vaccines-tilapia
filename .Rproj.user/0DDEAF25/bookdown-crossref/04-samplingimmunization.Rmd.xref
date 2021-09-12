@@ -1,4 +1,9 @@
 h1:sample-collection-and-immunization Sample collection and Immunization
 h2:sample-collection Sample collection
-h2:immunization Immunization
+h3:blood-collection Blood collection
+h3:mucus-collection Mucus collection
+h3:liver-tissue-collection Liver tissue collection
+h3:head-kidneys-tissue-collection Head kidneys tissue collection
+h2:immunization-1-day-0 Immunization 1 (day 0)
+h2:immunization-2-day-21 Immunization 2 (day 21)
 

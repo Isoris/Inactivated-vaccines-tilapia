@@ -1,0 +1,7 @@
+"0","library(ggplot2)"
+"0","bactgrowthav1 <- read_xlsx(path = ""Bacterial growth aero.xlsx"", sheet = ""Sheet1"")"
+"0",""
+"0","ggplot(bactgrowthav1, aes(x = time, y = OD600))+geom_point()+"
+"0","  xlab(""Time (h)"")+ylab(""Optical density (OD600)"")+ggtitle(""Standard growth curve OD600 of Aeromonas veronii"")+"
+"0","   geom_point(size=3)+theme_qwen()+scale_color_viridis(discrete=TRUE, option=""viridis"")"
+"0",""

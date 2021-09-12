@@ -24,7 +24,7 @@
 <meta name="author" content="By Quentin Andres ~ MSc. Aquaculture and Aquatic Resources Management, Asian Institute of Technology, Pathum Thani, Thailand" />
 
 
-<meta name="date" content="2021-09-11" />
+<meta name="date" content="2021-09-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,6 +53,23 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.19/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
 <html>
   
   <head>
@@ -190,19 +207,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="bacterial-isolation-from-the-fish-tissues.html"><a href="bacterial-isolation-from-the-fish-tissues.html"><i class="fa fa-check"></i><b>5</b> Bacterial isolation from the fish tissues</a></li>
 <li class="chapter" data-level="6" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>6</b> Preparation of bacterial culture and formalin-killed vaccines</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="cross.html"><a href="cross.html#recovery-of-the-two-strains-s.agalactiae-and-a.veronii-using-tsatsb-for-24h"><i class="fa fa-check"></i><b>6.1</b> Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h</a></li>
-<li class="chapter" data-level="6.2" data-path="cross.html"><a href="cross.html#bacterial-culture"><i class="fa fa-check"></i><b>6.2</b> Bacterial culture</a>
+<li class="chapter" data-level="6.1" data-path="cross.html"><a href="cross.html#principles-of-bacterial-culture"><i class="fa fa-check"></i><b>6.1</b> Principles of bacterial culture</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="cross.html"><a href="cross.html#growth-curves"><i class="fa fa-check"></i><b>6.2.1</b> Growth-curves</a></li>
-<li class="chapter" data-level="6.2.2" data-path="cross.html"><a href="cross.html#count-viable-and-dead-cells"><i class="fa fa-check"></i><b>6.2.2</b> Count viable and dead cells</a></li>
-<li class="chapter" data-level="6.2.3" data-path="cross.html"><a href="cross.html#estimate-biomass-with-spectrophotometer-for-600-nm"><i class="fa fa-check"></i><b>6.2.3</b> Estimate biomass with spectrophotometer for ??=600 nm</a></li>
+<li class="chapter" data-level="6.1.1" data-path="cross.html"><a href="cross.html#generation-of-microbial-growth-curves-according-to-od600-λ600-nm"><i class="fa fa-check"></i><b>6.1.1</b> Generation of microbial growth-curves according to OD600 (λ=600 nm)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="cross.html"><a href="cross.html#production-of-inactivated-vaccines"><i class="fa fa-check"></i><b>6.3</b> Production of inactivated vaccines</a>
+<li class="chapter" data-level="6.2" data-path="cross.html"><a href="cross.html#bacterial-strains"><i class="fa fa-check"></i><b>6.2</b> Bacterial strains</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa"><i class="fa fa-check"></i><b>6.3.1</b> Production of vaccine Sa</a></li>
-<li class="chapter" data-level="6.3.2" data-path="cross.html"><a href="cross.html#production-of-vaccine-av"><i class="fa fa-check"></i><b>6.3.2</b> Production of vaccine Av</a></li>
-<li class="chapter" data-level="6.3.3" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa-av"><i class="fa fa-check"></i><b>6.3.3</b> Production of vaccine Sa + Av</a></li>
-<li class="chapter" data-level="6.3.4" data-path="cross.html"><a href="cross.html#production-of-vaccine-control"><i class="fa fa-check"></i><b>6.3.4</b> Production of vaccine Control</a></li>
+<li class="chapter" data-level="6.2.1" data-path="cross.html"><a href="cross.html#aeromonas-veronii"><i class="fa fa-check"></i><b>6.2.1</b> Aeromonas veronii</a></li>
+<li class="chapter" data-level="6.2.2" data-path="cross.html"><a href="cross.html#streptoccocus-agalactiae"><i class="fa fa-check"></i><b>6.2.2</b> Streptoccocus agalactiae</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="cross.html"><a href="cross.html#bacterial-culture"><i class="fa fa-check"></i><b>6.3</b> Bacterial culture</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="cross.html"><a href="cross.html#laboratory-settings"><i class="fa fa-check"></i><b>6.3.1</b> Laboratory settings</a></li>
+<li class="chapter" data-level="6.3.2" data-path="cross.html"><a href="cross.html#recovery-of-strains"><i class="fa fa-check"></i><b>6.3.2</b> Recovery of strains</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="cross.html"><a href="cross.html#standard-a.veronii"><i class="fa fa-check"></i><b>6.4</b> Standard A.veronii</a></li>
+<li class="chapter" data-level="6.5" data-path="cross.html"><a href="cross.html#standard-s.agalactiae"><i class="fa fa-check"></i><b>6.5</b> Standard S.agalactiae</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="cross.html"><a href="cross.html#count-viable-and-dead-cells"><i class="fa fa-check"></i><b>6.5.1</b> Count viable and dead cells</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="cross.html"><a href="cross.html#production-of-vaccines"><i class="fa fa-check"></i><b>6.6</b> Production of vaccines</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa"><i class="fa fa-check"></i><b>6.6.1</b> Production of vaccine Sa</a></li>
+<li class="chapter" data-level="6.6.2" data-path="cross.html"><a href="cross.html#production-of-vaccine-av"><i class="fa fa-check"></i><b>6.6.2</b> Production of vaccine Av</a></li>
+<li class="chapter" data-level="6.6.3" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa-av"><i class="fa fa-check"></i><b>6.6.3</b> Production of vaccine Sa + Av</a></li>
+<li class="chapter" data-level="6.6.4" data-path="cross.html"><a href="cross.html#production-of-vaccine-control"><i class="fa fa-check"></i><b>6.6.4</b> Production of vaccine Control</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html"><i class="fa fa-check"></i><b>7</b> Sample collection and Immunization</a>
@@ -280,40 +309,349 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 body {
 text-align: justify}
 </style>
-<div id="recovery-of-the-two-strains-s.agalactiae-and-a.veronii-using-tsatsb-for-24h" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h</h2>
-<p>The two bacterial isolates used in this research are from Thailand. They were previously isolated from a diseased Nile tilapia.</p>
-<p>The two isolates are conserved in frozen glycerol and therefore must be recovered on a rich medium such as tryptic soy agar (TSA) or tryptic
-soy broth (TSB) for 24 h at 30 ???C</p>
-</div>
-<div id="bacterial-culture" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Bacterial culture</h2>
-<p>For the formulation of the inactivated bacterial vaccines, the bacteria will be put in culture in a volume of around 300mL of tryptic soy broth (TSB) for at least a day 24 h at 30???C
-under agitation et oxygenation.</p>
-<div id="growth-curves" class="section level3" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Growth-curves</h3>
-</div>
-<div id="count-viable-and-dead-cells" class="section level3" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> Count viable and dead cells</h3>
-</div>
-<div id="estimate-biomass-with-spectrophotometer-for-600-nm" class="section level3" number="6.2.3">
-<h3><span class="header-section-number">6.2.3</span> Estimate biomass with spectrophotometer for ??=600 nm</h3>
-<p>Once the growth is achieved, the bacterial cells of S.agalactiae and A.veronii will be inactivated by adding formalin to a final concentration of 3%(v/v) and incubated overnight at 4 ???C (the longer the better).</p>
+<div id="principles-of-bacterial-culture" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Principles of bacterial culture</h2>
+<p>The bacteria culture consists in growing the bacterial strain in a permissive culture medium (solid or liquid) containing all the nutrients on which the bacteria will feed on. The important variables and values to record for the culture of bacteria in for microbiology experiments are cell forming unts(CFU)/mL, time of inoculation, biomass(turbidity, light scattering by OD600 on a spectrophotometer), and the cell count(number/ml). Cell forming unts(CFU)/mL is a semi quantitative measure of the ability of a bacterial solution to create colonies. A bacterial colony on a petri dish/plate can only develop from a single viable bacteria, therefore it does not count the dead cells and the liquid phase of the bacterial solution from which the bacteria originates. In our project, our goal is to produce a solution containing antigenic particles from the bacteria. Our vaccine will contain whole killed bacteria that will be recognized by the fish immune system. The vaccine also contains bacterial debris and soluble bacterial antigenic bio molecules
+recognized by the fish immune system as well. Therefore the total amount of antigens in our inactivated vaccine is also the combination of live bacteria, dead bacteria, and bacterial debris/particles. As explained previously, cell forming unts(CFU)/mL is a count of concentration in live bacteria in the bacterial solution. It is possible to count the dead bacteria and approximate the number of total cells (dead and live) precisely by counting the cells using hemocytometer plate.</p>
+<div id="generation-of-microbial-growth-curves-according-to-od600-λ600-nm" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Generation of microbial growth-curves according to OD600 (λ=600 nm)</h3>
+<p>In order to understand how our two strains grow on our media, we need to generate microbial growth curves according to OD600 values for each strain. The growth curves are specific of the temperature, the composition of the culture medium and of the spectrophotometer. It is possible to normalize them when we use a new spectrophotometer if we have an older growth curve and the same culture medium and temperature.</p>
+<p>Instrument calibration is necessary if you like to compare OD600 values between different photometers as measurements of turbidity vary greatly depending on the optical setup of each device. Arrangement of optical parts of the photometer influence light scattering in many ways, resulting in different readings even for two instruments of the same type. OD600 values should not be considered as absorbance because microbial cells scatter light depending on size and shape and usually do not absorb light. The resulting factor can be used to multiply OD600 values of one instrument and compare them with another. When using a photometer without an automated blanking function, we must measure the corresponding empty culture media at 600 nm and enter OD600 values (replicates 1 - 5) for buffer solution of instrument 1 and 2 in fields B4 - B8 and D4 - D8, respectively. Then, we measure grown cell culture at 600 nm and enter measured OD600 values (replicates 1 - 5) for instrument 1 and 2 in fields C4 - C8 and E4 - E8, respectively.If we are using a photometer with an automated blanking function, we blank the instruments with corresponding culture media first, then we measure grown cell culture at 600 nm. We nter OD600 values for instrument 1 and 2 in fields I4 - I8 and J4 - J8, respectively. We can use calculated instrument factor to compare measured OD600 values for cell culture growth between instrument 1 and 2 of future experiments, respectively.</p>
+<p>For the formulation of the inactivated bacterial vaccines, the bacteria will be put in culture in a volume of around 300mL of tryptic soy broth (TSB) or in (TSA) for at least a day 24 h at 30◦C under agitation et oxygenation. The bacteria will develop and multiply at regular interval, 1 becomes 2 which divides to form 4 (2^2) then 2^3 2^4 2^5 2^6 and so on. The growth follow 3 general trends named phases. Start, logarithmic growth, stationary.</p>
 </div>
 </div>
-<div id="production-of-inactivated-vaccines" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Production of inactivated vaccines</h2>
-<div id="production-of-vaccine-sa" class="section level3" number="6.3.1">
-<h3><span class="header-section-number">6.3.1</span> Production of vaccine Sa</h3>
+<div id="bacterial-strains" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Bacterial strains</h2>
+<style>
+body {
+text-align: justify}
+</style>
+<div id="aeromonas-veronii" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Aeromonas veronii</h3>
 </div>
-<div id="production-of-vaccine-av" class="section level3" number="6.3.2">
-<h3><span class="header-section-number">6.3.2</span> Production of vaccine Av</h3>
+<div id="streptoccocus-agalactiae" class="section level3" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Streptoccocus agalactiae</h3>
 </div>
-<div id="production-of-vaccine-sa-av" class="section level3" number="6.3.3">
-<h3><span class="header-section-number">6.3.3</span> Production of vaccine Sa + Av</h3>
 </div>
-<div id="production-of-vaccine-control" class="section level3" number="6.3.4">
-<h3><span class="header-section-number">6.3.4</span> Production of vaccine Control</h3>
+<div id="bacterial-culture" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Bacterial culture</h2>
+<style>
+body {
+text-align: justify}
+</style>
+<div id="laboratory-settings" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Laboratory settings</h3>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
+<div id="htmlwidget-d3cb94767d44de1f550a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d3cb94767d44de1f550a">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6"],["Aeromonas veronii","Aeromonas veronii","Aeromonas veronii","Streptoccocus agalactiae","Streptoccocus agalactiae","Streptoccocus agalactiae"],["Culture Media:","Temperature:","Shaking:","Culture Media:","Temperature:","Shaking:"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Bacteria strain<\/th>\n      <th>Growth conditions<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.1: Strain and Settings
+</p>
+</div>
+</div>
+<div id="recovery-of-strains" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Recovery of strains</h3>
+<p>Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h
+The two bacterial isolates used in this research are from Thailand. They were previously isolated from a diseased Nile tilapia. The two isolates are conserved in frozen glycerol and therefore must be recovered on a rich medium such as tryptic soy agar (TSA) or tryptic soy broth (TSB) for 24 h at 30 ◦C</p>
+</div>
+</div>
+<div id="standard-a.veronii" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Standard A.veronii</h2>
+<style>
+body {
+text-align: justify}
+</style>
+<div id="standard-growth-curve-od600-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Standard growth curve OD600 for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-19"></span>
+<img src="_main_files/figure-html/unnamed-chunk-19-1.png" alt="Bacterial Standard curve OD600 for Aeromonas veronii " width="1536" />
+<p class="caption">
+Figure 6.2: Bacterial Standard curve OD600 for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="exponential-regression-of-od600-growth-curve-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Exponential Regression of OD600 Growth Curve for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-20"></span>
+<div id="htmlwidget-3d78f70a7b037410d5ee" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3d78f70a7b037410d5ee">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>e^b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.3: Bacterial Standard curve exponential regression of OD600 growth curve for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="standard-growth-curve-cfuml-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Standard growth curve CFU/mL for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-21"></span>
+<img src="_main_files/figure-html/unnamed-chunk-21-1.png" alt="Bacterial Standard curve CFU/mL for Aeromonas veronii " width="1536" />
+<p class="caption">
+Figure 6.4: Bacterial Standard curve CFU/mL for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="exponential-regression-of-cfuml-growth-curve-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Exponential Regression of CFU/mL Growth Curve for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-22"></span>
+<div id="htmlwidget-adebb7df1c1965233a10" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-adebb7df1c1965233a10">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>e^b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.5: Bacterial Standard curve exponential regression of CFU/mL growth curve for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="standard-growth-curve-cellsml-obtained-by-microscopic-count-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Standard growth curve Cells/mL obtained by microscopic count for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-23"></span>
+<img src="_main_files/figure-html/unnamed-chunk-23-1.png" alt="Bacterial Standard curve Cells/mL for Aeromonas veronii" width="1536" />
+<p class="caption">
+Figure 6.6: Bacterial Standard curve Cells/mL for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="exponential-regression-of-cellsml-growth-curve-obtained-by-microscopic-count-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Exponential Regression of Cells/mL Growth Curve obtained by microscopic count for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-24"></span>
+<div id="htmlwidget-1714406fc30a42c5d663" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1714406fc30a42c5d663">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>e^b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.7: Bacterial Standard curve exponential regression of Cells/mL growth curve for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="linear-regression-of-cfuml-vs.-od600-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Linear Regression of CFU/mL vs. OD600 for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-25"></span>
+<img src="_main_files/figure-html/unnamed-chunk-25-1.png" alt="Linear Regression of CFU/mL vs. OD600    for Aeromonas veronii" width="1536" />
+<p class="caption">
+Figure 6.8: Linear Regression of CFU/mL vs. OD600 for Aeromonas veronii
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-26"></span>
+<div id="htmlwidget-ca8a3c893d758912696b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ca8a3c893d758912696b">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.9: Bacterial Standard curve linear regression of CFU/mL vs. OD600 for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="linear-regression-of-cellsml-vs.-od600-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Linear Regression of Cells/mL vs. OD600 for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-27"></span>
+<img src="_main_files/figure-html/unnamed-chunk-27-1.png" alt="Linear Regression of Cells/mL vs. OD600  for Aeromonas veronii " width="1536" />
+<p class="caption">
+Figure 6.10: Linear Regression of Cells/mL vs. OD600 for Aeromonas veronii
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-28"></span>
+<div id="htmlwidget-643bd8cdf8a5b844ad10" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-643bd8cdf8a5b844ad10">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.11: Bacterial Standard curve linear regression of Cells/mL vs. OD600 for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="generation-time-by-od600-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Generation time by OD600 for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-29"></span>
+<div id="htmlwidget-0185d627eab0727622fa" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0185d627eab0727622fa">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Generation time [h]<\/th>\n      <th>Growth constant k [1/h]<\/th>\n      <th>Generation time [min]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.12: Bacterial Standard curve generation time by OD600 for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="generation-time-by-cfuml-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Generation time by CFU/mL for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-30"></span>
+<div id="htmlwidget-04d0d6bd29920220afa0" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-04d0d6bd29920220afa0">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Generation time [h]<\/th>\n      <th>Growth constant k [1/h]<\/th>\n      <th>Generation time [min]<\/th>\n      <th>Factor k(CFU/mL)/k(OD600)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.13: Bacterial Standard curve generation time by CFU/mL for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="generation-time-by-cellsml-for-aeromonas-veronii" class="section level4 unnumbered">
+<h4>Generation time by Cells/mL for Aeromonas veronii</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-31"></span>
+<div id="htmlwidget-4b804be0aac6263fdf1a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4b804be0aac6263fdf1a">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Generation time [h]<\/th>\n      <th>Growth constant k [1/h]<\/th>\n      <th>Generation time [min]<\/th>\n      <th>Factor k(Cells/mL)/k(OD600)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.14: Bacterial Standard curve generation time by Cells/mL for Aeromonas veronii
+</p>
+</div>
+</div>
+<div id="data" class="section level4" number="6.4.0.1">
+<h4><span class="header-section-number">6.4.0.1</span> Data</h4>
+<p>Below is the data:</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-32"></span>
+<div id="htmlwidget-20b3a40da2e076615b9e" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-20b3a40da2e076615b9e">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],[0,0,0,0,0,0,0,0,1000000,0,0,0,0,0,0,0,0,0,0,0,0,10000000000,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100000,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>time<\/th>\n      <th>OD600<\/th>\n      <th>Colonies<\/th>\n      <th>Dilution Factor<\/th>\n      <th>CFU<\/th>\n      <th>Hemocytometer_count<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.15: Data used for drawing the standard curve CFU/mL and OD600 for Aeromonas veronii
+</p>
+</div>
+</div>
+</div>
+<div id="standard-s.agalactiae" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Standard S.agalactiae</h2>
+<style>
+body {
+text-align: justify}
+</style>
+<div id="standard-growth-curve-od600-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Standard growth curve OD600 for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-33"></span>
+<img src="_main_files/figure-html/unnamed-chunk-33-1.png" alt="Bacterial Standard curve OD600 for Streptococcus agalactiae" width="1536" />
+<p class="caption">
+Figure 6.16: Bacterial Standard curve OD600 for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="exponential-regression-of-od600-growth-curve-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Exponential Regression of OD600 Growth Curve for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-34"></span>
+<div id="htmlwidget-31fa21ff2dc1f5cd50eb" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-31fa21ff2dc1f5cd50eb">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>e^b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.17: Bacterial Standard curve exponential regression of OD600 growth curve for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="standard-growth-curve-cfuml-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Standard growth curve CFU/mL for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-35"></span>
+<img src="_main_files/figure-html/unnamed-chunk-35-1.png" alt="Bacterial Standard curve CFU/mL for Streptococcus agalactiae" width="1536" />
+<p class="caption">
+Figure 6.18: Bacterial Standard curve CFU/mL for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="exponential-regression-of-cfuml-growth-curve-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Exponential Regression of CFU/mL Growth Curve Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-36"></span>
+<div id="htmlwidget-360841abb917ce0c9ee4" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-360841abb917ce0c9ee4">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>e^b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.19: Bacterial Standard curve exponential regression of CFU/mL growth curve for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="standard-growth-curve-cellsml-obtained-by-microscopic-count-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Standard growth curve Cells/mL obtained by microscopic count for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-37"></span>
+<img src="_main_files/figure-html/unnamed-chunk-37-1.png" alt="Bacterial Standard curve Cells/mL for Streptococcus agalactiae" width="1536" />
+<p class="caption">
+Figure 6.20: Bacterial Standard curve Cells/mL for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="exponential-regression-of-cellsml-growth-curve-obtained-by-microscopic-count-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Exponential Regression of Cells/mL Growth Curve obtained by microscopic count for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-38"></span>
+<div id="htmlwidget-5069a5aea7a131189548" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5069a5aea7a131189548">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>e^b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.21: Bacterial Standard curve exponential regression of Cells/mL growth curve for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="linear-regression-of-cfuml-vs.-od600-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Linear Regression of CFU/mL vs. OD600 for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-39"></span>
+<img src="_main_files/figure-html/unnamed-chunk-39-1.png" alt="Linear Regression of CFU/mL vs. OD600    for Streptococcus agalactiae" width="1536" />
+<p class="caption">
+Figure 6.22: Linear Regression of CFU/mL vs. OD600 for Streptococcus agalactiae
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-40"></span>
+<div id="htmlwidget-6234cf2e8ed8eba794b1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6234cf2e8ed8eba794b1">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.23: Bacterial Standard curve linear regression of CFU/mL vs. OD600 for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="linear-regression-of-cellsml-vs.-od600-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Linear Regression of Cells/mL vs. OD600 for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-41"></span>
+<img src="_main_files/figure-html/unnamed-chunk-41-1.png" alt="Linear Regression of CFU/mL vs. OD600    for Streptococcus agalactiae" width="1536" />
+<p class="caption">
+Figure 6.24: Linear Regression of CFU/mL vs. OD600 for Streptococcus agalactiae
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-42"></span>
+<div id="htmlwidget-9848ccb8ba39795fe118" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9848ccb8ba39795fe118">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>b (Slope)<\/th>\n      <th>a (Y-intercept)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.25: Bacterial Standard curve linear regression of Cells/mL vs. OD600 for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="generation-time-by-od600-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Generation time by OD600 for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
+<div id="htmlwidget-2a1e26789e5b62e41b4f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2a1e26789e5b62e41b4f">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Generation time [h]<\/th>\n      <th>Growth constant k [1/h]<\/th>\n      <th>Generation time [min]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.26: Bacterial Standard curve generation time by OD600 for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="generation-time-by-cfuml-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Generation time by CFU/mL for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-44"></span>
+<div id="htmlwidget-341afed1b2f67f3f91c7" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-341afed1b2f67f3f91c7">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Generation time [h]<\/th>\n      <th>Growth constant k [1/h]<\/th>\n      <th>Generation time [min]<\/th>\n      <th>Factor k(CFU/mL)/k(OD600)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.27: Bacterial Standard curve generation time by CFU/mL for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="generation-time-by-cellsml-for-streptococcus-agalactiae" class="section level4 unnumbered">
+<h4>Generation time by Cells/mL for Streptococcus agalactiae</h4>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-45"></span>
+<div id="htmlwidget-a948214993f228e9f96d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a948214993f228e9f96d">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],[null],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Generation time [h]<\/th>\n      <th>Growth constant k [1/h]<\/th>\n      <th>Generation time [min]<\/th>\n      <th>Factor k(Cells/mL)/k(OD600)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.28: Bacterial Standard curve generation time by Cells/mL for Streptococcus agalactiae
+</p>
+</div>
+</div>
+<div id="data-1" class="section level4" number="6.5.0.1">
+<h4><span class="header-section-number">6.5.0.1</span> Data</h4>
+<p>Below is the data:</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-46"></span>
+<div id="htmlwidget-de25b40d8810b3cc8536" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-de25b40d8810b3cc8536">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],[0,0,0,0,0,0,0,0,0,10000000,0,0,0,0,0,0,0,0,0,0,1000000000000,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100000,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>time<\/th>\n      <th>OD600<\/th>\n      <th>Colonies<\/th>\n      <th>Dilution Factor<\/th>\n      <th>CFU<\/th>\n      <th>Hemocytometer_count<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 6.29: Data used for drawing the standard curve CFU/mL and OD600 for Streptococcus agalactiae
+</p>
+</div>
+<!-- ### Estimate biomass with spectrophotometer for λ=600 nm -->
+</div>
+<div id="count-viable-and-dead-cells" class="section level3" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> Count viable and dead cells</h3>
+<p>Once the growth is achieved, the bacterial cells of S.agalactiae and A.veronii will be inactivated by adding formalin to a final concentration of 3%(v/v) and incubated overnight at 4 ◦C (the longer the better).</p>
+</div>
+</div>
+<div id="production-of-vaccines" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Production of vaccines</h2>
+<style>
+body {
+text-align: justify}
+</style>
+<p>Production of inactivated vaccines</p>
+<div id="production-of-vaccine-sa" class="section level3" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> Production of vaccine Sa</h3>
+</div>
+<div id="production-of-vaccine-av" class="section level3" number="6.6.2">
+<h3><span class="header-section-number">6.6.2</span> Production of vaccine Av</h3>
+</div>
+<div id="production-of-vaccine-sa-av" class="section level3" number="6.6.3">
+<h3><span class="header-section-number">6.6.3</span> Production of vaccine Sa + Av</h3>
+</div>
+<div id="production-of-vaccine-control" class="section level3" number="6.6.4">
+<h3><span class="header-section-number">6.6.4</span> Production of vaccine Control</h3>
 
 </div>
 </div>

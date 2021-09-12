@@ -1,0 +1,32 @@
+# Pond, fish and husbandry 
+
+<style>
+body {
+text-align: justify}
+</style>
+
+## Aquaria and ponds
+
+4 medium aquaria and 
+
+### Size and Shape 
+
+### Water parameters
+
+Temperature, 26–32 ◦C;
+pH, 7.5–8.5; 
+salinity, 0 ppt; 
+NH3, <1 ppm; 
+dissolved oxygen, 4–9 ppm) checked daily during the experiment period.
+
+```{r include=FALSE}
+#install.packages("DT")
+library(DT)
+```
+
+## Fish
+
+## Feeding regime
+
+## Acclimatation
+

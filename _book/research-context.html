@@ -24,7 +24,7 @@
 <meta name="author" content="By Quentin Andres ~ MSc. Aquaculture and Aquatic Resources Management, Asian Institute of Technology, Pathum Thani, Thailand" />
 
 
-<meta name="date" content="2021-09-11" />
+<meta name="date" content="2021-09-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,6 +53,23 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.19/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
 <html>
   
   <head>
@@ -178,81 +195,101 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html"><i class="fa fa-check"></i><b>4</b> Pond, fish and husbandry</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#aquaria"><i class="fa fa-check"></i><b>4.1</b> Aquaria</a>
+<li class="chapter" data-level="4.1" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#aquaria-and-ponds"><i class="fa fa-check"></i><b>4.1</b> Aquaria and ponds</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#size-and-shape"><i class="fa fa-check"></i><b>4.1.1</b> Size and Shape</a></li>
 <li class="chapter" data-level="4.1.2" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#water-parameters"><i class="fa fa-check"></i><b>4.1.2</b> Water parameters</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#number-of-fish-and-their-caracteristics"><i class="fa fa-check"></i><b>4.2</b> Number of fish and their caracteristics</a></li>
+<li class="chapter" data-level="4.2" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#fish"><i class="fa fa-check"></i><b>4.2</b> Fish</a></li>
 <li class="chapter" data-level="4.3" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#feeding-regime"><i class="fa fa-check"></i><b>4.3</b> Feeding regime</a></li>
 <li class="chapter" data-level="4.4" data-path="pond-fish-and-husbandry.html"><a href="pond-fish-and-husbandry.html#acclimatation"><i class="fa fa-check"></i><b>4.4</b> Acclimatation</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="bacterial-isolation-from-the-fish-tissues.html"><a href="bacterial-isolation-from-the-fish-tissues.html"><i class="fa fa-check"></i><b>5</b> Bacterial isolation from the fish tissues</a></li>
-<li class="chapter" data-level="6" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>6</b> Preparation of bacterial culture and formalin-killed vaccines</a>
+<li class="chapter" data-level="5" data-path="bacterial-isolation.html"><a href="bacterial-isolation.html"><i class="fa fa-check"></i><b>5</b> Bacterial isolation</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="cross.html"><a href="cross.html#recovery-of-the-two-strains-s.agalactiae-and-a.veronii-using-tsatsb-for-24h"><i class="fa fa-check"></i><b>6.1</b> Recovery of the two strains S.agalactiae and A.veronii using TSA/TSB for 24h</a></li>
-<li class="chapter" data-level="6.2" data-path="cross.html"><a href="cross.html#bacterial-culture"><i class="fa fa-check"></i><b>6.2</b> Bacterial culture</a>
+<li class="chapter" data-level="5.0.1" data-path="bacterial-isolation.html"><a href="bacterial-isolation.html#extraction-of-fish-tissues"><i class="fa fa-check"></i><b>5.0.1</b> Extraction of fish tissues</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bacterial-culture.html"><a href="bacterial-culture.html"><i class="fa fa-check"></i><b>6</b> Bacterial culture</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="cross.html"><a href="cross.html#growth-curves"><i class="fa fa-check"></i><b>6.2.1</b> Growth-curves</a></li>
-<li class="chapter" data-level="6.2.2" data-path="cross.html"><a href="cross.html#count-viable-and-dead-cells"><i class="fa fa-check"></i><b>6.2.2</b> Count viable and dead cells</a></li>
-<li class="chapter" data-level="6.2.3" data-path="cross.html"><a href="cross.html#estimate-biomass-with-spectrophotometer-for-600-nm"><i class="fa fa-check"></i><b>6.2.3</b> Estimate biomass with spectrophotometer for ??=600 nm</a></li>
-</ul></li>
-<li class="chapter" data-level="6.3" data-path="cross.html"><a href="cross.html#production-of-inactivated-vaccines"><i class="fa fa-check"></i><b>6.3</b> Production of inactivated vaccines</a>
+<li class="chapter" data-level="6.1" data-path="bacterial-culture.html"><a href="bacterial-culture.html#principles-of-bacterial-culture"><i class="fa fa-check"></i><b>6.1</b> Principles of bacterial culture</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa"><i class="fa fa-check"></i><b>6.3.1</b> Production of vaccine Sa</a></li>
-<li class="chapter" data-level="6.3.2" data-path="cross.html"><a href="cross.html#production-of-vaccine-av"><i class="fa fa-check"></i><b>6.3.2</b> Production of vaccine Av</a></li>
-<li class="chapter" data-level="6.3.3" data-path="cross.html"><a href="cross.html#production-of-vaccine-sa-av"><i class="fa fa-check"></i><b>6.3.3</b> Production of vaccine Sa + Av</a></li>
-<li class="chapter" data-level="6.3.4" data-path="cross.html"><a href="cross.html#production-of-vaccine-control"><i class="fa fa-check"></i><b>6.3.4</b> Production of vaccine Control</a></li>
+<li class="chapter" data-level="6.1.1" data-path="bacterial-culture.html"><a href="bacterial-culture.html#generation-of-microbial-growth-curves-according-to-od600-λ600-nm"><i class="fa fa-check"></i><b>6.1.1</b> Generation of microbial growth-curves according to OD600 (λ=600 nm)</a></li>
+<li class="chapter" data-level="6.1.2" data-path="bacterial-culture.html"><a href="bacterial-culture.html#live-and-dead-cells-counts-using-hemocytometer-under-light-microscopy"><i class="fa fa-check"></i><b>6.1.2</b> Live and dead cells counts using hemocytometer under light microscopy</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html"><i class="fa fa-check"></i><b>7</b> Sample collection and Immunization</a>
+<li class="chapter" data-level="6.2" data-path="bacterial-culture.html"><a href="bacterial-culture.html#bacterial-strains"><i class="fa fa-check"></i><b>6.2</b> Bacterial strains</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#sample-collection"><i class="fa fa-check"></i><b>7.1</b> Sample collection</a></li>
-<li class="chapter" data-level="7.2" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#immunization"><i class="fa fa-check"></i><b>7.2</b> Immunization</a></li>
+<li class="chapter" data-level="6.2.1" data-path="bacterial-culture.html"><a href="bacterial-culture.html#aeromonas-veronii"><i class="fa fa-check"></i><b>6.2.1</b> Aeromonas veronii</a></li>
+<li class="chapter" data-level="6.2.2" data-path="bacterial-culture.html"><a href="bacterial-culture.html#streptoccocus-agalactiae"><i class="fa fa-check"></i><b>6.2.2</b> Streptoccocus agalactiae</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html"><i class="fa fa-check"></i><b>8</b> Lab assays to monitor immune response</a>
+<li class="chapter" data-level="6.3" data-path="bacterial-culture.html"><a href="bacterial-culture.html#bacterial-culture-1"><i class="fa fa-check"></i><b>6.3</b> Bacterial culture</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#elisa-for-igm-and-igt"><i class="fa fa-check"></i><b>8.1</b> ELISA for IgM and IgT</a></li>
-<li class="chapter" data-level="8.2" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#pcr-of-key-immune-genes"><i class="fa fa-check"></i><b>8.2</b> PCR of key immune genes</a>
+<li class="chapter" data-level="6.3.1" data-path="bacterial-culture.html"><a href="bacterial-culture.html#laboratory-settings"><i class="fa fa-check"></i><b>6.3.1</b> Laboratory settings</a></li>
+<li class="chapter" data-level="6.3.2" data-path="bacterial-culture.html"><a href="bacterial-culture.html#recovery-of-strains"><i class="fa fa-check"></i><b>6.3.2</b> Recovery of strains</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="bacterial-culture.html"><a href="bacterial-culture.html#standard-a.veronii"><i class="fa fa-check"></i><b>6.4</b> Standard A.veronii</a></li>
+<li class="chapter" data-level="6.5" data-path="bacterial-culture.html"><a href="bacterial-culture.html#standard-s.agalactiae"><i class="fa fa-check"></i><b>6.5</b> Standard S.agalactiae</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="formalin-killed-vaccines.html"><a href="formalin-killed-vaccines.html"><i class="fa fa-check"></i><b>7</b> Formalin-killed vaccines</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#normalization-of-gene-expression-for-rt-pcr"><i class="fa fa-check"></i><b>8.2.1</b> Normalization of gene expression for RT-PCR</a></li>
+<li class="chapter" data-level="7.1" data-path="formalin-killed-vaccines.html"><a href="formalin-killed-vaccines.html#production-of-vaccine-sa"><i class="fa fa-check"></i><b>7.1</b> Production of vaccine Sa</a></li>
+<li class="chapter" data-level="7.2" data-path="formalin-killed-vaccines.html"><a href="formalin-killed-vaccines.html#production-of-vaccine-av"><i class="fa fa-check"></i><b>7.2</b> Production of vaccine Av</a></li>
+<li class="chapter" data-level="7.3" data-path="formalin-killed-vaccines.html"><a href="formalin-killed-vaccines.html#production-of-vaccine-sa-av"><i class="fa fa-check"></i><b>7.3</b> Production of vaccine Sa + Av</a></li>
+<li class="chapter" data-level="7.4" data-path="formalin-killed-vaccines.html"><a href="formalin-killed-vaccines.html#production-of-vaccine-control"><i class="fa fa-check"></i><b>7.4</b> Production of vaccine Control</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#agglutination-test"><i class="fa fa-check"></i><b>8.3</b> Agglutination test</a>
+<li class="chapter" data-level="8" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html"><i class="fa fa-check"></i><b>8</b> Sample collection and Immunization</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#qualitative-detection-of-the-presence-of-antibodies-by-agglutination"><i class="fa fa-check"></i><b>8.3.1</b> Qualitative detection of the presence of antibodies by agglutination</a></li>
-<li class="chapter" data-level="8.3.2" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#quantitative-antibody-agglutination-titration"><i class="fa fa-check"></i><b>8.3.2</b> Quantitative antibody agglutination titration</a></li>
-</ul></li>
-<li class="chapter" data-level="8.4" data-path="lab-assays-to-monitor-immune-response.html"><a href="lab-assays-to-monitor-immune-response.html#collect-and-analyze-results"><i class="fa fa-check"></i><b>8.4</b> Collect and analyze results</a></li>
-</ul></li>
-<li class="chapter" data-level="9" data-path="challenge-test.html"><a href="challenge-test.html"><i class="fa fa-check"></i><b>9</b> Challenge test</a>
+<li class="chapter" data-level="8.1" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#sample-collection"><i class="fa fa-check"></i><b>8.1</b> Sample collection</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="challenge-test.html"><a href="challenge-test.html#bacterial-challenge1-no-booster"><i class="fa fa-check"></i><b>9.1</b> Bacterial challenge1 (no booster)</a></li>
-<li class="chapter" data-level="9.2" data-path="challenge-test.html"><a href="challenge-test.html#bacterial-challenge-2-after-booster"><i class="fa fa-check"></i><b>9.2</b> Bacterial challenge 2 (after booster)</a></li>
+<li class="chapter" data-level="8.1.1" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#blood-collection"><i class="fa fa-check"></i><b>8.1.1</b> Blood collection</a></li>
+<li class="chapter" data-level="8.1.2" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#mucus-collection"><i class="fa fa-check"></i><b>8.1.2</b> Mucus collection</a></li>
+<li class="chapter" data-level="8.1.3" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#liver-tissue-collection"><i class="fa fa-check"></i><b>8.1.3</b> Liver tissue collection</a></li>
+<li class="chapter" data-level="8.1.4" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#head-kidneys-tissue-collection"><i class="fa fa-check"></i><b>8.1.4</b> Head kidneys tissue collection</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>10</b> Results</a>
+<li class="chapter" data-level="8.2" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#immunization-1-day-0"><i class="fa fa-check"></i><b>8.2</b> Immunization 1 (day 0)</a></li>
+<li class="chapter" data-level="8.3" data-path="sample-collection-and-immunization.html"><a href="sample-collection-and-immunization.html#immunization-2-day-21"><i class="fa fa-check"></i><b>8.3</b> Immunization 2 (day 21)</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html"><i class="fa fa-check"></i><b>9</b> Lab assays, immune responses</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="results.html"><a href="results.html#systemic-antibody-response"><i class="fa fa-check"></i><b>10.1</b> Systemic antibody response</a>
+<li class="chapter" data-level="9.1" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#elisa-for-igm-and-igt"><i class="fa fa-check"></i><b>9.1</b> ELISA for IgM and IgT</a></li>
+<li class="chapter" data-level="9.2" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#pcr-of-key-immune-genes"><i class="fa fa-check"></i><b>9.2</b> PCR of key immune genes</a>
 <ul>
-<li class="chapter" data-level="10.1.1" data-path="results.html"><a href="results.html#monovalent-vaccines"><i class="fa fa-check"></i><b>10.1.1</b> Monovalent vaccines</a></li>
-<li class="chapter" data-level="10.1.2" data-path="results.html"><a href="results.html#bivalent-vaccine"><i class="fa fa-check"></i><b>10.1.2</b> Bivalent vaccine</a></li>
+<li class="chapter" data-level="9.2.1" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#normalization-of-gene-expression-for-rt-pcr"><i class="fa fa-check"></i><b>9.2.1</b> Normalization of gene expression for RT-PCR</a></li>
 </ul></li>
-<li class="chapter" data-level="10.2" data-path="results.html"><a href="results.html#mucosal-antibody-response"><i class="fa fa-check"></i><b>10.2</b> Mucosal antibody response</a>
+<li class="chapter" data-level="9.3" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#agglutination-test"><i class="fa fa-check"></i><b>9.3</b> Agglutination test</a>
 <ul>
-<li class="chapter" data-level="10.2.1" data-path="results.html"><a href="results.html#monovalent-vaccines-1"><i class="fa fa-check"></i><b>10.2.1</b> Monovalent vaccines</a></li>
-<li class="chapter" data-level="10.2.2" data-path="results.html"><a href="results.html#bivalent-vaccine-1"><i class="fa fa-check"></i><b>10.2.2</b> Bivalent vaccine</a></li>
+<li class="chapter" data-level="9.3.1" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#qualitative-detection-of-the-presence-of-antibodies-by-agglutination"><i class="fa fa-check"></i><b>9.3.1</b> Qualitative detection of the presence of antibodies by agglutination</a></li>
+<li class="chapter" data-level="9.3.2" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#quantitative-antibody-agglutination-titration"><i class="fa fa-check"></i><b>9.3.2</b> Quantitative antibody agglutination titration</a></li>
 </ul></li>
-<li class="chapter" data-level="10.3" data-path="results.html"><a href="results.html#challenge-test-1-single-group"><i class="fa fa-check"></i><b>10.3</b> Challenge test 1 (Single group)</a>
+<li class="chapter" data-level="9.4" data-path="lab-assays-immune-responses.html"><a href="lab-assays-immune-responses.html#collect-and-analyze-results"><i class="fa fa-check"></i><b>9.4</b> Collect and analyze results</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="challenge-tests.html"><a href="challenge-tests.html"><i class="fa fa-check"></i><b>10</b> Challenge tests</a>
 <ul>
-<li class="chapter" data-level="10.3.1" data-path="results.html"><a href="results.html#relative-percentage-survival-single-dose"><i class="fa fa-check"></i><b>10.3.1</b> Relative percentage survival (single dose)</a></li>
-<li class="chapter" data-level="10.3.2" data-path="results.html"><a href="results.html#kaplan-meier-survival-estimates-for-the-first-challenge-test"><i class="fa fa-check"></i><b>10.3.2</b> Kaplan-Meier survival estimates for the first challenge test</a></li>
+<li class="chapter" data-level="10.1" data-path="challenge-tests.html"><a href="challenge-tests.html#bacterial-challenge-1-day-0"><i class="fa fa-check"></i><b>10.1</b> Bacterial challenge 1 (day 0)</a></li>
+<li class="chapter" data-level="10.2" data-path="challenge-tests.html"><a href="challenge-tests.html#bacterial-challenge-2-day-28"><i class="fa fa-check"></i><b>10.2</b> Bacterial challenge 2 (day 28)</a></li>
 </ul></li>
-<li class="chapter" data-level="10.4" data-path="results.html"><a href="results.html#challenge-test-2-booster-group"><i class="fa fa-check"></i><b>10.4</b> Challenge test 2 (Booster group)</a>
+<li class="chapter" data-level="11" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>11</b> Results</a>
 <ul>
-<li class="chapter" data-level="10.4.1" data-path="results.html"><a href="results.html#relative-percentage-survival-booster"><i class="fa fa-check"></i><b>10.4.1</b> Relative percentage survival (booster)</a></li>
-<li class="chapter" data-level="10.4.2" data-path="results.html"><a href="results.html#kaplan-meier-survival-estimates-for-the-second-challenge-test"><i class="fa fa-check"></i><b>10.4.2</b> Kaplan-Meier survival estimates for the second challenge test</a></li>
+<li class="chapter" data-level="11.1" data-path="results.html"><a href="results.html#systemic-antibody-response"><i class="fa fa-check"></i><b>11.1</b> Systemic antibody response</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="results.html"><a href="results.html#monovalent-vaccines"><i class="fa fa-check"></i><b>11.1.1</b> Monovalent vaccines</a></li>
+<li class="chapter" data-level="11.1.2" data-path="results.html"><a href="results.html#bivalent-vaccine"><i class="fa fa-check"></i><b>11.1.2</b> Bivalent vaccine</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="results.html"><a href="results.html#mucosal-antibody-response"><i class="fa fa-check"></i><b>11.2</b> Mucosal antibody response</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="results.html"><a href="results.html#monovalent-vaccines-1"><i class="fa fa-check"></i><b>11.2.1</b> Monovalent vaccines</a></li>
+<li class="chapter" data-level="11.2.2" data-path="results.html"><a href="results.html#bivalent-vaccine-1"><i class="fa fa-check"></i><b>11.2.2</b> Bivalent vaccine</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="results.html"><a href="results.html#challenge-test-1-unique"><i class="fa fa-check"></i><b>11.3</b> Challenge test 1 (Unique)</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="results.html"><a href="results.html#relative-percentage-survival-single-dose"><i class="fa fa-check"></i><b>11.3.1</b> Relative percentage survival (single dose)</a></li>
+<li class="chapter" data-level="11.3.2" data-path="results.html"><a href="results.html#kaplan-meier-survival-estimates-for-the-first-challenge-test"><i class="fa fa-check"></i><b>11.3.2</b> Kaplan-Meier survival estimates for the first challenge test</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="results.html"><a href="results.html#challenge-test-2-booster"><i class="fa fa-check"></i><b>11.4</b> Challenge test 2 (Booster)</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="results.html"><a href="results.html#relative-percentage-survival-booster"><i class="fa fa-check"></i><b>11.4.1</b> Relative percentage survival (booster)</a></li>
+<li class="chapter" data-level="11.4.2" data-path="results.html"><a href="results.html#kaplan-meier-survival-estimates-for-the-second-challenge-test"><i class="fa fa-check"></i><b>11.4.2</b> Kaplan-Meier survival estimates for the second challenge test</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>11</b> Discussion</a></li>
+<li class="chapter" data-level="12" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>12</b> Discussion</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>

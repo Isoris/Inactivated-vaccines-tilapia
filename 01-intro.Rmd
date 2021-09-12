@@ -5,7 +5,7 @@ body {
 text-align: justify}
 </style>
 
-## Aquaria
+## Aquaria and ponds
 
 4 medium aquaria and 
 
@@ -19,12 +19,12 @@ salinity, 0 ppt;
 NH3, <1 ppm; 
 dissolved oxygen, 4-9 ppm) checked daily during the experiment period.
 
-```{r}
+```{r include=FALSE}
 #install.packages("DT")
 library(DT)
 ```
 
-## Number of fish and their caracteristics
+## Fish
 
 ## Feeding regime
 

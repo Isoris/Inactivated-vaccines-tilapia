@@ -23,6 +23,10 @@ header-includes:
 ```{r, eval=FALSE}
 #install.packages("webshot")
 webshot::install_phantomjs()
+#install.packages("DT")
+#install.packages("readxl")
+library(readxl)
+library(DT)
 ```
 # Front matter {-}
 

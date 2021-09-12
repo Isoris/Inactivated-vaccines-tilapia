@@ -1,0 +1,15 @@
+"0","#install.packages(""webshot"")"
+"0","webshot::install_phantomjs()"
+"2","It seems that the version of `phantomjs` installed is greater than or equal to the requested version.To install the requested version or downgrade to another version, use `force = TRUE`.
+"
+"0","#install.packages(""DT"")"
+"0","#install.packages(""readxl"")"
+"0","library(readxl)"
+"0","library(DT)"
+"2","Warning:"
+"2"," package ‘DT’ was built under R version 4.1.1
+"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"

@@ -1,0 +1,293 @@
+% EE Thesis/Dissertation
+% Please see http://ee.tamu.edu/~tex for information about EE Thesis.
+
+\documentclass[a4paper]{aitthesis}
+
+
+\RequirePackage[sectionbib,round]{natbib}
+\bibliographystyle{apalike}
+\usepackage{siunitx}
+\usepackage{enumitem} 
+\usepackage[section]{placeins}
+\usepackage{tcolorbox}
+\usepackage{longtable}
+\usepackage{acro}
+\RequirePackage[hyphens]{url}
+\RequirePackage[pagebackref]{hyperref}
+\renewcommand{\backref}[1]{[p#1]}
+
+% Dark blue colour for all links
+\RequirePackage{color}
+\definecolor{link}{rgb}{0.45,0.51,0.67}
+\hypersetup{
+  colorlinks,%
+  citecolor=link,%
+  filecolor=link,%
+  linkcolor=link,%
+  urlcolor=link,
+}
+\usepackage{graphicx}
+\usepackage{amssymb,amsthm,amsmath}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\contentsname}{LIST OF CONTENTS}
+
+\acsetup{make-links, list/template= longtable}
+\usepackage{verbatim}
+\usepackage{multirow}   
+\usepackage{bm}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algcompatible}
+\usepackage{placeins}
+\usepackage{times}
+\usepackage{array}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{tikz}
+
+\DeclareAcronym{fkv}{
+  short=FKV,
+  long=formalin killed vaccines,
+}
+\DeclareAcronym{gbs}{
+  short=GBS,
+  long=Group B streptococci,
+}
+\DeclareAcronym{hrp}{
+  short=HRP,
+  long=horseradish peroxidase,
+}
+\DeclareAcronym{gp}{
+  short=GP,
+  long=Gram-positive,
+}
+\DeclareAcronym{mic}{
+  short=MIC,
+  long=Minimum inhibitory concentration,
+}
+\DeclareAcronym{s.}{
+  short=S.,
+  long=Streptococcus,
+}
+\DeclareAcronym{a.veronii}{
+  short=\underline{\textit{A.veronii}},
+  long=\underline{\textit{Aeromonas veronii}},
+}
+\DeclareAcronym{s.agalac}{
+  short=\underline{\textit{S.agalactiae}},
+  long=\underline{\textit{Streptococcus agalactiae}},
+}
+\DeclareAcronym{(v/v)}{
+  short= \textit{\%(v/v)} ,
+  long=Volume per volume (volume concentration of a solution),
+}
+\DeclareAcronym{tsb}{
+  short=TSB,
+  long=Tryptic soy broth,
+}
+\DeclareAcronym{bhi}{
+  short=BHI,
+  long=Brain heart infusion,
+}
+\DeclareAcronym{hkv}{
+  short=HKV,
+  long=Heat killed vaccines,
+}
+\DeclareAcronym{cfu}{
+  short=CFU,
+  long=Colony-forming units (CFU),
+}
+\DeclareAcronym{chitralada4}{
+  short=Chitralada 4,
+  long=Strain of Nile tilapia developped at Asian Institute of Technology,
+}
+\DeclareAcronym{saav}{
+  short=Sa+Av,
+  long=Bivalent vaccine against \underline{\textit{S.agalactiae}}+\underline{\textit{A.veronii}},
+}
+\DeclareAcronym{sa}{
+  short=Sa,
+  long=Vaccine against \underline{\textit{Streptococcus agalactiae}},
+}
+\DeclareAcronym{av}{
+  short=Av,
+  long=Vaccine against \underline{\textit{Aeromonas veronii}},
+}
+\DeclareAcronym{control}{
+  short=Ct,
+  long=Control 
+}
+\DeclareAcronym{onilo}{
+  short=\underline{\textit{O.niloticus}},
+  alt=\underline{\textit{Nile tilapia}},
+  long=\underline{\textit{Oreochromis niloticus}},
+}
+\DeclareAcronym{wg}{
+  short=WG,
+  long=weight gain of the animals (in grams),
+}
+\DeclareAcronym{elisa}{
+  short=ELISA,
+  long=enzyme-linked immunosorbent assay,
+}
+\DeclareAcronym{ab}{
+  short=Ab,
+  long=antibodies,
+}
+\DeclareAcronym{ag}{
+  short=Ag,
+  long=antigenic particles or Antigens,
+}
+\DeclareAcronym{tsa}{
+  short=TSA,
+  long=tryptone soya agar,
+}
+\DeclareAcronym{sod}{
+  short=SOD,
+  long=superoxide dismutase,
+}
+\DeclareAcronym{cat}{
+  short=CAT,
+  long=catalase,
+}
+\DeclareAcronym{gpx}{
+  short=GPx,
+  long=glutathione peroxidase,
+}
+\DeclareAcronym{ros}{
+  short=ROS,
+  long=reactive oxygen species,
+}
+\DeclareAcronym{prrs}{
+  short=PRRs,
+  long=pathogen recognition receptors,
+}
+\DeclareAcronym{pamps}{
+  short=PAMPs,
+  long=pathogen-associated molecular patterns,
+}
+\DeclareAcronym{nos}{
+  short=NOS,
+  long=nitric oxide synthetase,
+}
+\DeclareAcronym{srt}{
+  short=SRT,
+  long=sex-reveral therapy,
+}
+\DeclareAcronym{ld50}{
+  short=LD50,
+  long=lethal dose able to terminate 50\% of a population,
+}
+\DeclareAcronym{ld100}{
+  short=LD100,
+  long=lethal dose able to kill 100\% of a population,
+}
+\DeclareAcronym{ip}{
+  short=IP,
+  long=intra peritoneal injection,
+  alt=intra peritoneally injected,
+}
+\DeclareAcronym{dpv}{
+  short=dpv,
+  long=days post-vaccination,
+}
+\DeclareAcronym{pbs}{
+  short=PBS,
+  long=phosphate buffer saline,
+}
+\DeclareAcronym{igm}{
+  short=IgM,
+  long=immunoglobulins M,
+}
+\DeclareAcronym{igt}{
+  short=IgT,
+  long=immunoglobulins T,
+}
+\DeclareAcronym{ig}{
+  short=Ig,
+  long=immunoglobulin,
+}
+\DeclareAcronym{rtpcr}{
+  short=RT-PCR,
+  long=real-time reverse transcription polymerase chain reaction,
+}
+
+
+% \newcommand{\oops}[1]{\bf{#1}}
+% \newcommand{\ga}{\bar{\gamma}}
+% \newcommand{\myint}{\int_0^{\infty}}
+% \renewcommand{\vec}[1]{\mathbf{#1}}
+% \newcommand{\mat}[1]{\mathrm{#1}}
+% 
+% \newcommand{\vectornorm}[1]{\left|\left|#1\right|\right|}
+% 
+% \newcommand{\ten}[1]{\mathcal{#1}}
+% \newcommand{\crossmat}[1]{\begin{bmatrix} #1 \end{bmatrix}_{\times}}
+% \newcommand{\class}[1]{{\cal C}_{#1}}
+% \def\Rset{\mathbb{R}}
+% \def\Pset{\mathbb{P}}
+% \DeclareMathOperator*{\argmax}{argmax}
+% \DeclareMathOperator*{\argmin}{argmin}
+% \DeclareMathOperator*{\sign}{sign}
+% % \def\norm{\mbox{$\cal{N}$}}
+% \newcommand\parms{\vec{\lambda}}
+% \newcommand\oldparms{\parms^{\text{old}}}
+% \newcommand{\mypm}{\mathbin{\smash{%
+% \raisebox{0.35ex}{%
+%             $\underset{\raisebox{0.5ex}{$\smash -$}}{\smash+}$%
+%             }%
+%         }%
+%     }%
+% }
+
+\def\short{1}
+% \renewcommand{\contentsname}{My nice list of contents}
+% \renewcommand{\listfigurename}{My nice list of figures}
+% \renewcommand{\listtablename}{My nice list of table}
+\begin{document}
+% \renewcommand\listfigurename{LIST OF FIGURES}
+\pagenumbering{roman}
+\pagestyle{plain}
+\include{frontstuff}
+
+
+\small
+
+\pagenumbering{arabic}
+\setlength{\headheight}{12pt}
+\pagestyle{plain}
+
+\include{intro}
+\pagestyle{plain}
+\include{literature}
+\include{methodology}
+\include{results}
+\include{conclusion}
+
+% NEED TO CHANGE THE SECTION NUMBER FOR REFERENCES ACCORDINGLY.
+\phantomsection
+\bibliography{REFERENCES}
+\addcontentsline{toc}{chapter}{\hskip 3.55em REFERENCES}
+
+
+% COMMENT THE LINES ABOUT APPENDICS OUT IF YOU DO NOT HAVE THIS SECTION.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                 %
+%                            APPENDICES                           %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage\pagestyle{plain}
+\theappendix
+ 
+% NEED TO CHANGE THE SECTION NUMBER FOR REFERENCES ACCORDINGLY.
+\phantomsection
+\include{appendix1}
+\include{appendix2}
+\addcontentsline{toc}{chapter}{\hskip 3.55em APPENDICES}
+
+
+\phantomsection
+\addcontentsline{toc}{chapter}{\hskip 3.55em VITA}
+\include{vita}
+\end{document}

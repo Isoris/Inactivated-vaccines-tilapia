@@ -1,0 +1,28 @@
+{
+    "id": "95D8309A",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1631192852113.0,
+    "source_on_save": false,
+    "relative_order": 15,
+    "properties": {
+        "id": "72b156ce6a9b4a55984dc45cfdc604b7",
+        "name": "fitchallenge1",
+        "title": "fitchallenge1",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2024406026632,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1631192852113,
+    "read_only": false,
+    "read_only_alternatives": []
+}
